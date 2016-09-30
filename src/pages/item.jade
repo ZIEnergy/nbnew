@@ -19,7 +19,11 @@ html(lang='en')
                   a.breadcrumbs__item-link(href="#") Мужские
               .product__gallery
                 .product__gallery-big
-                  .product__gallery-sale Экономия <br>5710 &#8381;
+                  .product__gallery-sale
+                    .product__gallery-sale-content Экономия
+                      span.product__gallery-sale-price 4710
+                        +currency
+                    .product__gallery-sale-badge -30%
                   a.product__gallery-big-link.cloud-zoom#zoom1(href="img/item-1-big.jpg", rel="adjustX: 0, adjustY: 0, zoomWidth: 340, zoomHeight: 340")
                     img.product__gallery-big-img(src="img/item-1-big.jpg", alt="New Balance", align="left")
                 .product__thumbnails-container        
@@ -32,7 +36,7 @@ html(lang='en')
             .product__right
               h1.product__name New Balance женские M574BCB
               .product__price
-                .product__price-new 2 990
+                .product__price-new 3990
                   span.product__price-currency &nbsp;&#8381;
                 .product__price-old 8 700
                   span.product__price-currency &nbsp;&#8381;
