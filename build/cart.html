@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/cloud-zoom.1.0.2.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,700">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top"><a href="index.html" class="logo"><img src="img/logo.png" alt="New Balance" class="logo__img"></a><a href="page.html" class="delivery-link">
+            <div class="delivery-link__icon"></div>
+            <div class="delivery-link__content">
+              <p class="delivery-link__header">Акция!</p>
+              <p class="delivery-link__text">Доставим по Москве за 90 минут</p>
+            </div></a>
+          <div class="store-link">
+            <div class="store-link__icon"></div>
+            <div class="store-link__content"><a href="#" class="store-link__header">Мясницкая, 17</a>
+              <p class="store-link__text">Ежедневно: 10.00 — 21.00 м. Чистые Пруды</p>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="phone__number">+7 (495) 150-11-07</div><a href="#callback" data-modal class="phone__callback">Заказать звонок</a>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <ul class="menu">
+            <li class="menu__item"><a href="catalog.html" class="menu__item-link">Мужские</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__item-link">Женские</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Магазин</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Доставка</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Гарантии</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Сертификаты</a></li>
+            <li class="menu__item"><a href="feedback.html" class="menu__item-link">Отзывы</a></li>
+          </ul><a href="cart.html" class="cart">
+            <div class="cart__icon"></div>
+            <div class="cart__content">Корзина:</div>
+            <div class="cart__price">0</div>
+            <div class="cart__currency">руб.</div></a>
+        </div>
+      </header>
+      <div class="content">
+        <form action="#" method="POST" class="order">
+          <h1 class="order__header">Оформление заказа</h1>
+          <table class="order__table">
+            <tr class="order__table-row">
+              <th class="order__table-header">Фото</th>
+              <th class="order__table-header">Наименование</th>
+              <th class="order__table-header">Размер</th>
+              <th class="order__table-header">Количество</th>
+              <th class="order__table-header">Цена</th>
+              <th class="order__table-header">Итог</th>
+              <th class="order__table-header"></th>
+            </tr>
+            <tr class="order__table-row">
+              <td class="order__table-cell"><img src="img/order-item.jpg" alt="New Balance" class="order__table-img"></td>
+              <td class="order__table-cell">
+                <div class="order__table-name">New Balance мужские M574TK</div>
+              </td>
+              <td class="order__table-cell">
+                <select id="cart-size" name="size" class="order__table-size">
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                </select>
+              </td>
+              <td class="order__table-cell">
+                <div class="order__table-amount"><a class="order__table-amount-decrement">-</a>
+                  <input type="text" value="1" class="order__input-amount"><a class="order__table-amount-increment">+</a>
+                </div>
+              </td>
+              <td class="order__table-cell">
+                <div class="order__table-price">3 990 &#8381;</div>
+              </td>
+              <td class="order__table-cell">
+                <div class="order__table-price-overall">3 990 &#8381;</div>
+              </td>
+              <td class="order__table-cell order__table-cell--remove"><a href="#" class="order__table-remove"></a></td>
+            </tr>
+          </table>
+          <div class="order__bottom">
+            <div class="order__bottom-left">
+              <div class="order__form-item">
+                <label class="order__form-item-header">Имя:</label>
+                <input type="text" placeholder="Ваше имя" class="input-text input-text--grey">
+              </div>
+              <div class="order__form-item">
+                <label class="order__form-item-header">Контактный телефон:</label>
+                <input type="text" placeholder="8 (999) 555-55-55" class="input-text input-text--grey">
+              </div>
+              <div class="order__form-item">
+                <label class="order__form-item-header">E-mail:</label>
+                <input type="text" placeholder="E-mail" class="input-text input-text--grey">
+              </div>
+            </div>
+            <div class="order__bottom-right">
+              <div class="order__radio-item">
+                <input type="radio" id="free">
+                <label for="free" class="order__radio-content">
+                  <div class="order__radio-header">Бесплатно</div>
+                  <div class="order__radio-text">Самовывоз из шоу-рума м.Чистые пруды, ул.Мясницкая, 17</div>
+                </label>
+              </div>
+              <div class="order__radio-item">
+                <input type="radio" id="moscow">
+                <label for="moscow" class="order__radio-content">
+                  <div class="order__radio-header">300 руб.</div>
+                  <div class="order__radio-text">Доставка по Москве курьерской службой</div>
+                </label>
+              </div>
+              <div class="order__radio-item">
+                <input type="radio" id="russia">
+                <label for="russia" class="order__radio-content">
+                  <div class="order__radio-header">500 руб. (приблизительно)</div>
+                  <div class="order__radio-text">Доставка по России почтой EMS, 5-12 дней</div>
+                </label>
+              </div>
+              <div class="order__form-item order__form-item--address">
+                <label class="order__form-item-header">Адрес доставки:</label>
+                <input type="text" placeholder="Адрес доставки" class="input-text input-text--grey">
+              </div>
+            </div>
+          </div>
+          <div class="order__form-item">
+            <label class="order__form-item-header">Комментарий к заказу:</label>
+            <textarea type="text" class="input-text input-text--grey order__textarea"></textarea>
+          </div>
+          <div class="order__controls">
+            <p class="order__fullprice">Итого: 3990 &#8381;</p>
+            <button class="order__btn">Заказать</button>
+          </div>
+        </form>
+      </div>
+      <footer class="footer">
+        <nav class="footer__navigation"><a href="#" class="footer__logo"><img src="img/footer-logo.png" alt="New Balance" class="footer__logo-img"></a>
+          <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__item-link">Главная</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Мужские</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Женские</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Магазин</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Доставка</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Гарантии</a></li>
+          </ul>
+        </nav>
+        <div class="footer__bottom">
+          <div class="footer__info"> 
+            <p class="footer__info-item">New Balance обувь по ценам США </p>
+            <p class="footer__info-item">Официальный магазин в Москве</p>
+            <p class="footer__info-item">ООО "КАПИТАЛ ГРУПП"</p>
+            <p class="footer__info-item">ИНН 5031117294 </p>
+            <p class="footer__info-item">ОГРН 1155031004370</p>
+            <p class="footer__info-item">Магазин: г. Москва, Мясницкая 17, время работы: 10.00 — 21.00, ежедневно</p>
+          </div>
+          <div class="phone">
+            <div class="phone__number">+7 (495) 150-11-07</div><a href="#callback" data-modal class="phone__callback phone__callback--uppercase">Заказать звонок</a>
+          </div>
+        </div>
+      </footer>
+        <div id="callback" class="modal modal-callback">
+          <h3 class="modal__header">Заказать звонок</h3>
+          <p class="modal__text">Для заказа звонка заполните форму. <br> Мы свяжемся с Вами в указанное время!</p>
+          <form action="#" class="form-callback">
+            <input type="text" placeholder="Имя" name="name" class="input-text modal__input-text">
+            <input type="text" placeholder="8 (999) 555-55-55" name="phone" class="input-text modal__input-text">
+            <button class="btn btn--large modal__btn">Отправить</button>
+          </form>
+        </div>
+        <div id="order" class="modal modal-order">
+          <div class="modal-order__wrapper">
+            <ul class="modal-order__features">
+              <li class="order-feature">
+                <div class="order-feature__icon order-feature__icon--delivery"></div>
+                <div class="order-feature__content">
+                  <div class="order-feature__header">Доставка <br> за 90 минут</div>
+                  <div class="order-feature__text">По Москве до 3-х пар</div>
+                </div>
+              </li>
+              <li class="order-feature">
+                <div class="order-feature__icon order-feature__icon--return"></div>
+                <div class="order-feature__content">
+                  <div class="order-feature__header">Возврат</div>
+                  <div class="order-feature__text">По Москве до 3-х пар</div>
+                </div>
+              </li>
+              <li class="order-feature">
+                <div class="order-feature__icon order-feature__icon--guarantee"></div>
+                <div class="order-feature__content">
+                  <div class="order-feature__header">Гарантия</div>
+                  <div class="order-feature__text">Оригинальная обувь с гарантией на год!</div>
+                </div>
+              </li>
+            </ul>
+            <div class="modal-order__content">
+              <div class="modal-order__item"><img src="img/order-1.jpg" alt="New Balance" class="modal-order__item-picture">
+                <div class="modal-order__price-old">8 700</div>
+                <div class="modal-order__price-new">3 990 руб</div>
+                <div class="modal-order__name">New Balance женские M574BCC (2294)</div>
+                <div class="modal-order__availability">Товар в наличии</div>
+              </div>
+              <form action="#" class="form-order modal-order__form">
+                <input type="text" placeholder="Ваше имя" name="name" class="input-text input-text--large modal__input-text">
+                <select id="size" name="size" class="select modal-order__select">
+                  <option value="36" disabled selected>Ваш размер</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                </select>
+                <input type="text" placeholder="8 (999) 555-55-55" name="phone" class="input-text input-text--large modal__input-text">
+                <input type="email" placeholder="E-mail" name="email" class="input-text input-text--large modal__input-text">
+                <input type="text" placeholder="Адрес доставки" name="address" class="input-text input-text--large modal__input-text">
+                <button class="btn btn--large modal__btn modal-order__button">Купить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

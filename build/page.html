@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/cloud-zoom.1.0.2.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,700">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top"><a href="index.html" class="logo"><img src="img/logo.png" alt="New Balance" class="logo__img"></a><a href="page.html" class="delivery-link">
+            <div class="delivery-link__icon"></div>
+            <div class="delivery-link__content">
+              <p class="delivery-link__header">Акция!</p>
+              <p class="delivery-link__text">Доставим по Москве за 90 минут</p>
+            </div></a>
+          <div class="store-link">
+            <div class="store-link__icon"></div>
+            <div class="store-link__content"><a href="#" class="store-link__header">Мясницкая, 17</a>
+              <p class="store-link__text">Ежедневно: 10.00 — 21.00 м. Чистые Пруды</p>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="phone__number">+7 (495) 150-11-07</div><a href="#callback" data-modal class="phone__callback">Заказать звонок</a>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <ul class="menu">
+            <li class="menu__item"><a href="catalog.html" class="menu__item-link">Мужские</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__item-link">Женские</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Магазин</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Доставка</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Гарантии</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Сертификаты</a></li>
+            <li class="menu__item"><a href="feedback.html" class="menu__item-link">Отзывы</a></li>
+          </ul><a href="cart.html" class="cart">
+            <div class="cart__icon"></div>
+            <div class="cart__content">Корзина:</div>
+            <div class="cart__price">0</div>
+            <div class="cart__currency">руб.</div></a>
+        </div>
+      </header>
+      <div class="content">
+        <aside class="sidebar"><a href="#" class="sidebar__header">Все модели</a>
+          <ul class="catalog-index">
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link catalog-index__category-link--red">Распродажа</a></li>
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link">Женские</a>
+              <ul class="catalog-index__category-sections">
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 574</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 580</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 670</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 990</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 996</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 999</a></li>
+              </ul>
+            </li>
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link">Мужские</a>
+              <ul class="catalog-index__category-sections">
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 530</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 574</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 576</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 580</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 670</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 990</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 996</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 997</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 998</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 999</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 1400</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 1500</a></li>
+              </ul>
+            </li>
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link">Материал</a>
+              <ul class="catalog-index__category-sections">
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">Замша</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">Кожа</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">Текстиль</a></li>
+              </ul>
+            </li>
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link">По сезонам</a>
+              <ul class="catalog-index__category-sections">
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">Лето</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">Осень</a></li>
+              </ul>
+            </li>
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link">Аксессуары</a></li>
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link">Одежда</a></li>
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link">Размеры 46-50</a></li>
+            <li class="catalog-index__category"><span class="catalog-index__category-link">Цвет</span>
+              <ul class="colors catalog-index__colors">
+                <li class="colors__item"><a href="#" class="colors__item-link colors__item-link--white"></a></li>
+                <li class="colors__item"><a href="#" class="colors__item-link colors__item-link--yellow"></a></li>
+                <li class="colors__item"><a href="#" class="colors__item-link colors__item-link--green"></a></li>
+                <li class="colors__item"><a href="#" class="colors__item-link colors__item-link--brown"></a></li>
+                <li class="colors__item"><a href="#" class="colors__item-link colors__item-link--red"></a></li>
+                <li class="colors__item"><a href="#" class="colors__item-link colors__item-link--pink"></a></li>
+                <li class="colors__item"><a href="#" class="colors__item-link colors__item-link--grey"></a></li>
+                <li class="colors__item"><a href="#" class="colors__item-link colors__item-link--blue"></a></li>
+                <li class="colors__item"><a href="#" class="colors__item-link colors__item-link--purple"></a></li>
+                <li class="colors__item"><a href="#" class="colors__item-link colors__item-link--black"></a></li>
+              </ul>
+            </li>
+          </ul><a href="#" class="sidebar__header">Отзывы</a>
+          <ul class="feedback">
+            <li class="feedback-item">
+              <div class="feedback-item__header"><img src="img/feedback-1.jpg" alt="Марина" class="feedback-item__picture">
+                <div class="feedback-item__author">Марина</div>
+              </div>
+              <p class="feedback-item__content">Отличный магазин моих любимых кроссовок. Заказывала дважды-всё супер!</p>
+            </li>
+            <li class="feedback-item">
+              <div class="feedback-item__header"><img src="img/feedback-2.jpg" alt="Иван" class="feedback-item__picture">
+                <div class="feedback-item__author">Иван</div>
+              </div>
+              <p class="feedback-item__content">Магазин понравился. Дали полную консультацию, цена нормальная и качество хорошее, быстрая доставка. Я остался доволен!</p>
+            </li>
+            <li class="feedback-item">
+              <div class="feedback-item__header"><img src="img/feedback-3.jpg" alt="Валентин" class="feedback-item__picture">
+                <div class="feedback-item__author">Валентин</div>
+              </div>
+              <p class="feedback-item__content">Я заказываю здесь кроссовки уже 2-й раз. Первые до сих пор не убил, хотя ношу почти каждый день. Качество-супер, ценовая политика вполне приемлимая. Работой магазина доволен, как и в прошлый раз, всё оперативно доставили. Консультанты помогли подобрать размер ещё в первый раз и теперь я знаю какой мой. Кроссовки пришли чётко по моей ноге. Подумываю заказать ещё одну пару. В общем магазин рекомендую-кроссовки здесь классные, не пожалеете!</p>
+            </li>
+          </ul>
+        </aside>
+        <section class="section">
+          <article class="article">
+            <h2 class="article__header">Магазин New Balance — дисконт-магазин на м. Чистые Пруды</h2>
+            <p class="article__text">Чтобы лично посмотреть и примерить кроссовки New Balance, Вы можете приехать в наш магазин. О наличии конкретной модели и размеров Вы всегда можете уточнить у наших менеджеров, каждый день с 10-00 до 21-00 по телефону:  8 (495) 150-11-07!</p>
+            <p class="article__text">Цены в магазине соответсвуют ценам на сайте, к оплате принимается только наличный расчет.</p>
+            <p class="article__text">Мы находимся по адресу:</p>
+            <p class="article__text">г. Москва, Мясницкая, д. 17 <br> *7 дней в неделю с 10.00 до 21.00.</p>
+          </article>
+          <article class="article">
+            <h2 class="article__header">Интернет-магазин New Balance: широкий выбор, недорого, качественно, с доставкой по Москве</h2>
+            <p class="article__text">Ознакомьтесь с ассортиментом, представленным в каталоге:</p>
+            <ul class="article__list">
+              <li class="article__list-item">Женские и мужские кроссовки New Balance моделей 574, 576, 580, 670, 990, 996, 997, 998, 999, 1500. Выбирайте варианты из замши, кожи и текстиля, облегченные, демисезонные и зимние модели.</li>
+              <li class="article__list-item">Рюкзаки New Balance из прочной, износоустойчивой ткани, с крупным логотипом бренда на лицевой части.</li>
+              <li class="article__list-item">Мужские поло, футболки для повседневной носки и активного отдыха. Они отличаются удобным кроем, разнообразием расцветок, которое передано на фото каждой позиции, и низкой ценой.</li>
+              <li class="article__list-item">Аксессуары и средства по уходу за обувью: растяжители, пена, щетки для обуви, шнурки разных цветов.</li>
+            </ul>
+            <p class="article__text">На официальном сайте покупатели найдут все популярные модели-оригиналы, ставшие «лицом» бренда New Balance. Приобретайте дешево одежду и кроссовки NB в онлайн-режиме или, посетив дисконт-магазина в Москве. Будучи официальным дилером, интернет-магазин реализует только 100% оригинальные модели, качество которых подтверждают сертификаты.</p>
+          </article><img src="img/store-crew.jpg" alt="New Balance" class="article__img">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Q1Vdxmdk6nOyX1reBocHr3Bv-5Q_DB-s&amp;amp;width=100%&amp;amp;height=400&amp;amp;lang=ru_RU&amp;amp;sourceType=constructor&amp;amp;scroll=true"></script>
+          <div class="feedback-item">
+            <div class="feedback-item__header"><img src="img/feedback-3.jpg" alt="Валентин" class="feedback-item__picture">
+              <div class="feedback-item__author">Валентин</div>
+            </div>
+            <p class="feedback-item__content">Я заказываю здесь кроссовки уже 2-й раз. Первые до сих пор не убил, хотя ношу почти каждый день. Качество-супер, ценовая политика вполне приемлимая. Работой магазина доволен, как и в прошлый раз, всё оперативно доставили. Консультанты помогли подобрать размер ещё в первый раз и теперь я знаю какой мой. Кроссовки пришли чётко по моей ноге. Подумываю заказать ещё одну пару. В общем магазин рекомендую-кроссовки здесь классные, не пожалеете!</p>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <nav class="footer__navigation"><a href="#" class="footer__logo"><img src="img/footer-logo.png" alt="New Balance" class="footer__logo-img"></a>
+          <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__item-link">Главная</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Мужские</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Женские</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Магазин</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Доставка</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Гарантии</a></li>
+          </ul>
+        </nav>
+        <div class="footer__bottom">
+          <div class="footer__info"> 
+            <p class="footer__info-item">New Balance обувь по ценам США </p>
+            <p class="footer__info-item">Официальный магазин в Москве</p>
+            <p class="footer__info-item">ООО "КАПИТАЛ ГРУПП"</p>
+            <p class="footer__info-item">ИНН 5031117294 </p>
+            <p class="footer__info-item">ОГРН 1155031004370</p>
+            <p class="footer__info-item">Магазин: г. Москва, Мясницкая 17, время работы: 10.00 — 21.00, ежедневно</p>
+          </div>
+          <div class="phone">
+            <div class="phone__number">+7 (495) 150-11-07</div><a href="#callback" data-modal class="phone__callback phone__callback--uppercase">Заказать звонок</a>
+          </div>
+        </div>
+      </footer>
+        <div id="callback" class="modal modal-callback">
+          <h3 class="modal__header">Заказать звонок</h3>
+          <p class="modal__text">Для заказа звонка заполните форму. <br> Мы свяжемся с Вами в указанное время!</p>
+          <form action="#" class="form-callback">
+            <input type="text" placeholder="Имя" name="name" class="input-text modal__input-text">
+            <input type="text" placeholder="8 (999) 555-55-55" name="phone" class="input-text modal__input-text">
+            <button class="btn btn--large modal__btn">Отправить</button>
+          </form>
+        </div>
+        <div id="order" class="modal modal-order">
+          <div class="modal-order__wrapper">
+            <ul class="modal-order__features">
+              <li class="order-feature">
+                <div class="order-feature__icon order-feature__icon--delivery"></div>
+                <div class="order-feature__content">
+                  <div class="order-feature__header">Доставка <br> за 90 минут</div>
+                  <div class="order-feature__text">По Москве до 3-х пар</div>
+                </div>
+              </li>
+              <li class="order-feature">
+                <div class="order-feature__icon order-feature__icon--return"></div>
+                <div class="order-feature__content">
+                  <div class="order-feature__header">Возврат</div>
+                  <div class="order-feature__text">По Москве до 3-х пар</div>
+                </div>
+              </li>
+              <li class="order-feature">
+                <div class="order-feature__icon order-feature__icon--guarantee"></div>
+                <div class="order-feature__content">
+                  <div class="order-feature__header">Гарантия</div>
+                  <div class="order-feature__text">Оригинальная обувь с гарантией на год!</div>
+                </div>
+              </li>
+            </ul>
+            <div class="modal-order__content">
+              <div class="modal-order__item"><img src="img/order-1.jpg" alt="New Balance" class="modal-order__item-picture">
+                <div class="modal-order__price-old">8 700</div>
+                <div class="modal-order__price-new">3 990 руб</div>
+                <div class="modal-order__name">New Balance женские M574BCC (2294)</div>
+                <div class="modal-order__availability">Товар в наличии</div>
+              </div>
+              <form action="#" class="form-order modal-order__form">
+                <input type="text" placeholder="Ваше имя" name="name" class="input-text input-text--large modal__input-text">
+                <select id="size" name="size" class="select modal-order__select">
+                  <option value="36" disabled selected>Ваш размер</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                </select>
+                <input type="text" placeholder="8 (999) 555-55-55" name="phone" class="input-text input-text--large modal__input-text">
+                <input type="email" placeholder="E-mail" name="email" class="input-text input-text--large modal__input-text">
+                <input type="text" placeholder="Адрес доставки" name="address" class="input-text input-text--large modal__input-text">
+                <button class="btn btn--large modal__btn modal-order__button">Купить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

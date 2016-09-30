@@ -1,0 +1,32 @@
+.store-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 170px;
+  
+  &__icon {
+    width: 21px;
+    height: 29px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAdCAMAAABymtfJAAAAQlBMVEUAAABRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVE2knRTAAAAFXRSTlMAjO2z9MYvI8wV5XFTJtdkRw64mpi6cqbaAAAAsklEQVQoz23RVxLDIAwE0EWmE7ck3P+qGSMhYybvx2hNEQOYNy7b7IzHLSy1W1aIl603+5KwPrV4tVNqr03eWunegJehSUhGxh4yKrgUmYHYvhkstyqCZCvGjRNq48AclzK3Br4kF9T/xgQgxb6yd0OmGOpdcr8Tz8cqbcj/mwp8p/CDS6JHSAly+1GB2IZwQ3cM6QG1jF2poO8QMDB619GZuasTD3tLd0xie5lZcNbpUT/DcRyVYjIDqgAAAABJRU5ErkJggg==') no-repeat;
+    background-size: cover;
+    flex: 0 0 auto;
+  }
+  &__content {
+    margin-left: 9px;
+  }
+  &__header {
+    color: @link-blue;
+    font-family: @font-family-main;
+    font-size: 14px;
+    line-height: 17px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__text {
+    color: @text-color;
+    font-family: @font-family-main;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
