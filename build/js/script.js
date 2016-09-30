@@ -32,4 +32,9 @@ $(document).ready(function() {
   
   $("img.lazy").lazyload();
   
+  $('.product__thumbnail').click(function() {
+    $('.product__thumbnail').removeClass('product__thumbnail--active');
+    $(this).addClass('product__thumbnail--active');
+  });
+  
 });

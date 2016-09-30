@@ -2,36 +2,46 @@
   display: flex;
   align-items: center;
   background: #444;
-  padding: 10px 40px 10px 10px;
+  padding: 16px 20px;
   text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  right: 0;
+  top: -4px;
+  
   
   &__icon {
-    width: 30px;
-    height: 26px;
+    width: 25px;
+    height: 22px;
     background: url(../img/cart-icon.png) no-repeat;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAMAAACXfxyGAAAAeFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////GqOSsAAAAJ3RSTlMARLvv3SJI4gkE1aiVfhf16b+tn4VcOjUTD+vXr4x4c2JTTkAsJCEikEnZAAAAlUlEQVQoz83RRw6DMBBA0QkQ0zuBkN7//W+YIgUZy/I2eRvL+vZmRn4taQZXzsC7OvqQQhM5HjwSVuJwJHflC6Gn6+b5Br6GzTxHhNrtRCtzIWoxqVFGrtFVsZFb8ulzRyaGA/nyK6U38xlNKKbRCyZb2wQL9Rn7Wo1iqz5J/KoVgW07CihEeuBuyfGu3L+PtMzkHzwBtaANAU3buSMAAAAASUVORK5CYII=') no-repeat;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAB20lEQVRIS7WVwVHzQAyFn/bgK1ABoQOoAKgAqAByidYnoAKggh9OtnIJVECogNBBqABKCMfkEDHyrDP+E2edQNAlM7Gsz0962qU8z/tEdAhgoKoD59xbp9MZYoNBIvIJYHeu5khV+9779iZYlGVZyzl3AeAIgCmaxXQ6PU7TdPBbEM0XyLLsyDn3Gv6/Y+bbjUOsoIjY15uqv4MEM5yo6ov3/vSvlFiLbgC8MbPNqggRuVLVk3WgRPSyMJOyGIB/AEbMvFOB1DmxkVkLqQ6fmWc5FSc2FgZgjt1V1fdlELP1h1UiooOfLKeIjABsAbiuhYSWqf2Wu9Lr9bbH4/E5EW03yVDVFhGZEnt/LwYp+3/NzPd5nt8T0WUToPrcWuW9349B/tuVbre7r6qr2tmcaVF8YAzyCOB83V0J5ijmaa1K0/QzBil3ZUhEV6u2Kai1fSpaVZhn2csiYq15XrV4TV7RqigkyLZ7xWy4bnwlSdJqt9tm4+VKqlVt6E27EstZ2i6DBEfZsW+7MWTmg3lJppiIXomoZTlJkhyXCsrcKKQ8jSuFz5i5XwXV7M/C9RCFiEhh4xjETuZwmJZps4GvpCQM30CHqvrgvV+wsh03k8nE1Nkl98TMxXFSjW9gk+LUC8VO9QAAAABJRU5ErkJggg==') no-repeat;
     background-size: cover;
     position: relative;
-    top: -3px;
+    margin-right: 12px;
+    top: -2px;
   }
   
   &__content {
-    color: #fff;
+    color: @gray;
     text-transform: uppercase;
     font-family: @font-family-main;
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: 700;
     margin-right: 5px;
   }
   
   &__price {
-    color: #fff;
+    color: @gray;
     font-family: @font-family-main;
-    font-size: 17px;
+    font-weight: 700;
+    font-size: 14px;
   }
   
   &__currency {
-    color: #fff;
+    color: @gray;
     font-family: @font-family-main;
-    font-size: 17px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 3px;
   }
 }

@@ -67,11 +67,21 @@
   }
   
   &__thumbnail {
-    width: 100px;
-    height: 100px;
+    width: 89px;
+    height: 89px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 99999;
+    
+    &:nth-child(n+2) {
+      margin-left: 32px;
+    }
+    
+    &--active {
+      border: 2px solid #ccc;
+    }
   }
   
   &__thumbnail-img {
