@@ -37,26 +37,26 @@ html(lang='en')
               h1.product__name New Balance женские M574BCB
               .product__price
                 .product__price-new 3990
-                  span.product__price-currency &nbsp;&#8381;
+                  span.product__price-currency.currency &nbsp;&#8381;
                 .product__price-old 8 700
                   span.product__price-currency &nbsp;&#8381;
               .product__sizes
-                .product__sizes-header Доступные размеры (RUS):
+                .product__sizes-header Размеры (RUS):
                 ul.product__sizes-list
-                  li.product__sizes-item.product__sizes-item--inactive
-                    a.product__sizes-item-content 35
-                  li.product__sizes-item
-                    a.product__sizes-item-content 36
-                  li.product__sizes-item
-                    a.product__sizes-item-content 37
-                  li.product__sizes-item
-                    a.product__sizes-item-content 38
                   li.product__sizes-item
                     a.product__sizes-item-content 39
-                  li.product__sizes-item
+                  li.product__sizes-item.product__sizes-item--inactive
                     a.product__sizes-item-content 40
-                  li.product__sizes-item
+                  li.product__sizes-item.product__sizes-item--active
                     a.product__sizes-item-content 41
+                  li.product__sizes-item
+                    a.product__sizes-item-content 42
+                  li.product__sizes-item
+                    a.product__sizes-item-content 43
+                  li.product__sizes-item
+                    a.product__sizes-item-content 44
+                  li.product__sizes-item
+                    a.product__sizes-item-content 45
               .size-question
                 a.size-question__link(href="#", data-size-popup) Как определить свой размер?
                 .size-question__popup
@@ -162,14 +162,75 @@ html(lang='en')
                         td.size-question__table-cell 8.5
                         td.size-question__table-cell 9.5
                         td.size-question__table-cell 10
-              .product__buttons
-                a.btn-buy(href="#") Купить сейчас
-                a.btn-cart(href="#") В корзину
+              form.buy-now(action="#" method="post")
+                .buy-now__phone
+                  span.buy-now__phone-country +7
+                  input.buy-now__phone-region(type="text")
+                  input.buy-now__phone-number(type="text")
+                button.btn-buy(href="#") Купить сейчас
+                a.buy-now__to-cart(href="#") Отложить в корзину
               ul.product__features
                 li.product__features-item Есть в наличии
                 li.product__features-item Бесплатная доставка за 90 минут
                 li.product__features-item Натуральная замша
-          .product__dscr История New Balance началась в 1906 году в США. Основателем был Вильям Райли. Как бы не смешно звучало, но идея к нему пришла, когда он смотрел на курочку,заметил, что куринная лапка очень устойчивая, за счет 3-ех точек опоры. Эта идея и была реализована. За это время компания сменила множество владельцев. Были и взлеты и падения, но несмотря на это, в настоящее время компания New Balance - одна из самых ведущих на рынке спортивной обуви. И на протяжении всей своей истории нью беланс остается верной своим принципам - технологичность, комфорт, качество!
+      .other-colors
+        h2.section-header Другие расцветки этой модели:
+        .other-colors__slider
+          a.other-colors__item(href="#")
+              img.other-colors__item-picture(src="img/other-1.jpg", alt="New Balance")
+          a.other-colors__slider-item(href="#")
+              img.other-colors__item-picture(src="img/other-2.jpg", alt="New Balance")
+          a.other-colors__slider-item(href="#")
+              img.other-colors__item-picture(src="img/other-3.jpg", alt="New Balance")
+          a.other-colors__slider-item(href="#")
+              img.other-colors__item-picture(src="img/other-4.jpg", alt="New Balance")
+          a.other-colors__item(href="#")
+              img.other-colors__item-picture(src="img/other-1.jpg", alt="New Balance")
+          a.other-colors__slider-item(href="#")
+              img.other-colors__item-picture(src="img/other-2.jpg", alt="New Balance")
+          a.other-colors__slider-item(href="#")
+              img.other-colors__item-picture(src="img/other-3.jpg", alt="New Balance")
+          a.other-colors__slider-item(href="#")
+              img.other-colors__item-picture(src="img/other-4.jpg", alt="New Balance")
+          a.other-colors__item(href="#")
+              img.other-colors__item-picture(src="img/other-1.jpg", alt="New Balance")
+          a.other-colors__slider-item(href="#")
+              img.other-colors__item-picture(src="img/other-2.jpg", alt="New Balance")
+          a.other-colors__slider-item(href="#")
+              img.other-colors__item-picture(src="img/other-3.jpg", alt="New Balance")
+          a.other-colors__slider-item(href="#")
+              img.other-colors__item-picture(src="img/other-4.jpg", alt="New Balance")
+    .info
+      .wrapper
+        ul.shop-features
+          li.shop-features__item.shop-features__item--age
+            h3.shop-features__item-header Нам 5 лет!
+            p.shop-features__item-content Крупнейший магазин Newbalance в Москве
+          li.shop-features__item.shop-features__item--return
+            h3.shop-features__item-header Возврат
+            p.shop-features__item-content Обмен и возврат кроссовок в течении 14 дней!
+          li.shop-features__item.shop-features__item--originals
+            h3.shop-features__item-header Оригиналы из США
+            p.shop-features__item-content Качественная обувь по ценам США
+          li.shop-features__item.shop-features__item--guarantee
+            h3.shop-features__item-header Гарантия 1 год
+            p.shop-features__item-content Оригинальная обувь с гарантией на год
+        ul.info-menu.info__info-menu
+          li.info-menu__item.info-menu__item--active
+            a.info-menu__item-link(href="#") О бренде
+          li.info-menu__item
+            a.info-menu__item-link(href="#") Характеристики
+          li.info-menu__item
+            a.info-menu__item-link(href="#") Гарантия
+          li.info-menu__item
+            a.info-menu__item-link(href="#") Доставка
+          li.info-menu__item
+            a.info-menu__item-link(href="#") Магазин
+          li.info-menu__item
+            a.info-menu__item-link(href="#") Сертификаты
+        .info__text
+          span.first-letter И
+          .info__text-content стория New Balance началась в 1906 году в США. Основателем был Вильям Райли. Как бы не смешно звучало, но идея к нему пришла, когда он смотрел на курочку,заметил, что куринная лапка очень устойчивая, за счет 3-ех точек опоры. Эта идея и была реализована. За это время компания сменила множество владельцев. Были и взлеты и падения, но несмотря на это, в настоящее время компания New Balance - одна из самых ведущих на рынке спортивной обуви. И на протяжении всей своей истории нью беланс остается верной своим принципам - технологичность, комфорт, качество!
       include ../templates/footer.jade
       +modalCallback
       +modalOrder

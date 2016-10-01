@@ -41,3 +41,39 @@
 #wrap {
   z-index: 100!important;
 }
+
+
+/* Slick */
+
+.slick-dots {
+  display: flex!important;
+  justify-content: center;
+  margin-top: 20px;
+  
+  li {
+    
+    &:nth-child(n+2) {
+      margin-left: 18px;
+    }
+    
+    button {
+      width: 10px;
+      height: 10px;
+      background: #e4e4e4;
+      border-radius: 50%;
+      color: transparent;
+      cursor: pointer;
+      
+      &:focus {
+        outline: 0;
+      }
+    }
+    
+    &.slick-active {
+      
+      button {
+        background: #666;
+      }
+    }
+  }
+}

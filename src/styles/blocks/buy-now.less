@@ -1,0 +1,51 @@
+.buy-now {
+  background: #f2d0d0;
+  border-radius: 6px;
+  padding: 20px;
+  
+  &__phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  } 
+  
+  &__phone-country {
+    font-size: 24px;
+    font-family: @font-family-main;
+    font-weight: 700;
+  }
+  
+  &__phone-region {
+    height: 40px;
+    width: 80px;
+    background: #fff;
+  }
+  
+  &__phone-number {
+    height: 40px;
+    width: 214px;
+    background: #fff;
+  }
+  
+  &__to-cart {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: @font-family-main;
+    color: #000;
+    text-decoration: none;
+    
+    &:before {
+      content: '';
+      display: block;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAaCAYAAABLlle3AAAB30lEQVRIS7WWjTUDURBGbyoQFaACUgEqkA5QAakAFUgHqAAVoAJUgApQAefmvImXzSb7k/XOyckmu/vu/Hwz83rAC7DN33oHtrLfnV/2ACEbhZ33gcfOaWlDoZvp41+nwAFwAxz9JzTfew94SH8YYqPQ+dLT4opwXwDnhZvDQv5bGVQGNaxXycuioH5aUWZfeiqD9hNwDTgGrrN3NKhtrncA9xyVQWUIOkwKVsldrK8EHSyCqui3DgUVAv0G+oug8qzT3Y7KR0GeAffAcBk0BGVYFJTfbVc4MALGy6AConyKgmoCV5if6YWBbbcKGmFZpR9b27fAJJ/Cq6C5lW378Rg4ybVRBc3LZyKCJnFNz8YUm6aoDnSVflxaenWgGhzWlvXjZc5HBXxkk6wyp7FhXj4aUHfF2JwZlXU9zftxXWD+3EzJ1YW6gQ17IvkUqmWz1mfziHg9bS5NoMJUr2NPuJvYYYpT6DK7b5nNpaMJ1Pw8A68JpAEebeKEEUq1tDTExuLZa66FNoGGmNaTl9E4Jv00QWzqsWcYMddUmkCjnYVnAQ2ReKgztGFU1PdK0FCwzdvwaYQG6JH59dv8OYfv0snSfquoZiZUE09DwebKXJo7r3Oh6J2h9vDufb2fU/kv9qdv+teprVAAAAAASUVORK5CYII=') no-repeat;
+      background-size: cover;
+      width: 29px;
+      height: 26px;
+      margin-right: 12px;
+    }
+  }
+}

@@ -37,4 +37,10 @@ $(document).ready(function() {
     $(this).addClass('product__thumbnail--active');
   });
   
+  $('.other-colors__slider').slick({arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    dots: true
+  });
+  
 });

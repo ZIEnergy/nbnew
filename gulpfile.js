@@ -68,6 +68,7 @@ gulp.task('watch', function () {
     gulp.watch(['./src/styles/*.less', './src/styles/global/*.less', './src/styles/blocks/*.less', './src/styles/plugins/*.less'], ['styles']);
     gulp.watch('./src/pages/*.jade', ['templates']);
     gulp.watch('./src/templates/*.jade', ['templates']);
+    gulp.watch('./src/fonts/*', ['fonts']);
     gulp.watch('./src/images/*', ['images']);
     gulp.watch('./src/scripts/*.js', ['scripts']);
 });

@@ -1,24 +1,37 @@
 .btn-buy {
   display: flex;
-  width: 165px;
-  height: 56px;
+  width: 356px;
+  height: 82px;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
+  border-radius: 18px;
   font-family: @font-family-main;
-  font-size: 20px;
+  font-size: 28px;
+  font-weight: 700;
   color: #fff;
   text-decoration: none;
-  border-bottom: 3px solid darken(@color-primary, 10%);
-  background-image: -webkit-gradient(linear, 0 0, 0 37.125, color-stop(0.054, #ef3356), to(#e31a3e));
-  background-image: -webkit-linear-gradient(#ef3356 5.4%, #e31a3e);
-  background-image: -moz-linear-gradient(#ef3356 5.4%, #e31a3e);
-  background-image: -o-linear-gradient(#ef3356 5.4%, #e31a3e);
-  background-image: linear-gradient(#ef3356 5.4%, #e31a3e);
+  background-image: -webkit-gradient(linear, 0 0, 342 0, from(#278dd1), to(#5098db));
+  background-image: -webkit-linear-gradient(360deg, #278dd1, #5098db);
+  background-image: -moz-linear-gradient(360deg, #278dd1, #5098db);
+  background-image: -o-linear-gradient(360deg, #278dd1, #5098db);
+  background-image: linear-gradient(90deg, #278dd1, #5098db);
+  position: relative;
+  border-right: 11px solid #2e76b9;
+  border-bottom: 11px solid #2e76b9;
+  box-shadow: 2.5px 4.3px 10px rgba(12, 61, 109, 0.3);
+  cursor: pointer;
   
-  &:hover {
-    border-bottom-width: 2px;
-    position: relative;
-    top: 1px;
+  &:focus {
+    outline: none;
+  }
+  
+  &:after {
+    content: '';
+    display: block;
+    width: 41px;
+    height: 36px;
+    margin-left: 38px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAkCAYAAAAU/hMoAAACeklEQVRYR82YgXHUMBBF91cQUgG5CjgqACoIVABUkKSChAqADpIKQiqAVABUwHUQqOAz/0b2yIpsr2SdJztzczN3WvlZu/raFUh+MLPPZvbXzH6Ezz2AnT0RA8kHM3uW4RHkk4AWpGCeOxZN494B+OUY23SIILdmdm1mLxwz7wBsHOOaDkE3G0mF/LWZvQ3f2dUF0Ps0JZmYbPSBJE8C7FWSDi/XDvnsqpD8YmZn0Yu+AaANtZp5ILWSlxHRBQCBr2YeSOXp94joEwCBr2Y1kDcAdACsZrOQIiHJiEinkVZ3YGGjKS204VqZtPlrDWRWK0l+M7PTVnTRPDsvpHbzq84xp5UHhDQvZLpKm7QACeHWhloabvnHB8m9FzKVoYNpZUaXL7yQ56Gc6yL+EYDO++ZG8k8SjY0XchWtDCkjyM5+A9h6IZUnsfNAK0MlpaNzaT6qyFFV1tn+dHNBzmnlROG8NB32G7QEMi6OB1pJUq3H0VKixH8fav1WAjmqlSHcqkOXmIDiw6AvZEog05LtkVYuISQptXgfzdHPXwJ5UK1MpKcPdWm4Fc7b6E2baWVIl59jc5esZKqVS6I753sMQJtxb27IjAzNPaj2/zsAg01YCunt0WsB5fcojUohS3r0UtB/6v8BqE4YWBFk6VNbja+CJKlN1HWQSgEJb5/oU3AklW9di+zyLYYMD4mlSEwClPhOgpJMSz75ClQXDqO+NZBjt3Czre5EITLZy9dAxp1jHNlsF9kNyNSKse9km1wDOVbxeFZy7AUnfWsgc3kl+djO3Q6TTM9/raZ8T5rmZDh5BKpbDN1p3pnZlfemLWwe+aqKV/l3Pvdy/wFhGSKAr384WgAAAABJRU5ErkJggg==') no-repeat;
+    background-size: cover;
   }
 }

@@ -10,6 +10,7 @@
     <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="js/cloud-zoom.1.0.2.js"></script>
     <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/style.css">
@@ -73,19 +74,19 @@
             <div class="product__right">
               <h1 class="product__name">New Balance женские M574BCB</h1>
               <div class="product__price">
-                <div class="product__price-new">3990<span class="product__price-currency">&nbsp;&#8381;</span></div>
+                <div class="product__price-new">3990<span class="product__price-currency currency">&nbsp;&#8381;</span></div>
                 <div class="product__price-old">8 700<span class="product__price-currency">&nbsp;&#8381;</span></div>
               </div>
               <div class="product__sizes">
-                <div class="product__sizes-header">Доступные размеры (RUS):</div>
+                <div class="product__sizes-header">Размеры (RUS):</div>
                 <ul class="product__sizes-list">
-                  <li class="product__sizes-item product__sizes-item--inactive"><a class="product__sizes-item-content">35</a></li>
-                  <li class="product__sizes-item"><a class="product__sizes-item-content">36</a></li>
-                  <li class="product__sizes-item"><a class="product__sizes-item-content">37</a></li>
-                  <li class="product__sizes-item"><a class="product__sizes-item-content">38</a></li>
                   <li class="product__sizes-item"><a class="product__sizes-item-content">39</a></li>
-                  <li class="product__sizes-item"><a class="product__sizes-item-content">40</a></li>
-                  <li class="product__sizes-item"><a class="product__sizes-item-content">41</a></li>
+                  <li class="product__sizes-item product__sizes-item--inactive"><a class="product__sizes-item-content">40</a></li>
+                  <li class="product__sizes-item product__sizes-item--active"><a class="product__sizes-item-content">41</a></li>
+                  <li class="product__sizes-item"><a class="product__sizes-item-content">42</a></li>
+                  <li class="product__sizes-item"><a class="product__sizes-item-content">43</a></li>
+                  <li class="product__sizes-item"><a class="product__sizes-item-content">44</a></li>
+                  <li class="product__sizes-item"><a class="product__sizes-item-content">45</a></li>
                 </ul>
               </div>
               <div class="size-question"><a href="#" data-size-popup class="size-question__link">Как определить свой размер?</a>
@@ -204,7 +205,13 @@
                   </div>
                 </div>
               </div>
-              <div class="product__buttons"><a href="#" class="btn-buy">Купить сейчас</a><a href="#" class="btn-cart">В корзину</a></div>
+              <form action="#" method="post" class="buy-now">
+                <div class="buy-now__phone"><span class="buy-now__phone-country">+7</span>
+                  <input type="text" class="buy-now__phone-region">
+                  <input type="text" class="buy-now__phone-number">
+                </div>
+                <button href="#" class="btn-buy">Купить сейчас</button><a href="#" class="buy-now__to-cart">Отложить в корзину</a>
+              </form>
               <ul class="product__features">
                 <li class="product__features-item">Есть в наличии</li>
                 <li class="product__features-item">Бесплатная доставка за 90 минут</li>
@@ -212,7 +219,43 @@
               </ul>
             </div>
           </div>
-          <div class="product__dscr">История New Balance началась в 1906 году в США. Основателем был Вильям Райли. Как бы не смешно звучало, но идея к нему пришла, когда он смотрел на курочку,заметил, что куринная лапка очень устойчивая, за счет 3-ех точек опоры. Эта идея и была реализована. За это время компания сменила множество владельцев. Были и взлеты и падения, но несмотря на это, в настоящее время компания New Balance - одна из самых ведущих на рынке спортивной обуви. И на протяжении всей своей истории нью беланс остается верной своим принципам - технологичность, комфорт, качество!</div>
+        </div>
+      </div>
+      <div class="other-colors">
+        <h2 class="section-header">Другие расцветки этой модели:</h2>
+        <div class="other-colors__slider"><a href="#" class="other-colors__item"><img src="img/other-1.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__slider-item"><img src="img/other-2.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__slider-item"><img src="img/other-3.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__slider-item"><img src="img/other-4.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__item"><img src="img/other-1.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__slider-item"><img src="img/other-2.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__slider-item"><img src="img/other-3.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__slider-item"><img src="img/other-4.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__item"><img src="img/other-1.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__slider-item"><img src="img/other-2.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__slider-item"><img src="img/other-3.jpg" alt="New Balance" class="other-colors__item-picture"></a><a href="#" class="other-colors__slider-item"><img src="img/other-4.jpg" alt="New Balance" class="other-colors__item-picture"></a></div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="wrapper">
+        <ul class="shop-features">
+          <li class="shop-features__item shop-features__item--age">
+            <h3 class="shop-features__item-header">Нам 5 лет!</h3>
+            <p class="shop-features__item-content">Крупнейший магазин Newbalance в Москве</p>
+          </li>
+          <li class="shop-features__item shop-features__item--return">
+            <h3 class="shop-features__item-header">Возврат</h3>
+            <p class="shop-features__item-content">Обмен и возврат кроссовок в течении 14 дней!</p>
+          </li>
+          <li class="shop-features__item shop-features__item--originals">
+            <h3 class="shop-features__item-header">Оригиналы из США</h3>
+            <p class="shop-features__item-content">Качественная обувь по ценам США</p>
+          </li>
+          <li class="shop-features__item shop-features__item--guarantee">
+            <h3 class="shop-features__item-header">Гарантия 1 год</h3>
+            <p class="shop-features__item-content">Оригинальная обувь с гарантией на год</p>
+          </li>
+        </ul>
+        <ul class="info-menu info__info-menu">
+          <li class="info-menu__item info-menu__item--active"><a href="#" class="info-menu__item-link">О бренде</a></li>
+          <li class="info-menu__item"><a href="#" class="info-menu__item-link">Характеристики</a></li>
+          <li class="info-menu__item"><a href="#" class="info-menu__item-link">Гарантия</a></li>
+          <li class="info-menu__item"><a href="#" class="info-menu__item-link">Доставка</a></li>
+          <li class="info-menu__item"><a href="#" class="info-menu__item-link">Магазин</a></li>
+          <li class="info-menu__item"><a href="#" class="info-menu__item-link">Сертификаты</a></li>
+        </ul>
+        <div class="info__text"><span class="first-letter">И</span>
+          <div class="info__text-content">стория New Balance началась в 1906 году в США. Основателем был Вильям Райли. Как бы не смешно звучало, но идея к нему пришла, когда он смотрел на курочку,заметил, что куринная лапка очень устойчивая, за счет 3-ех точек опоры. Эта идея и была реализована. За это время компания сменила множество владельцев. Были и взлеты и падения, но несмотря на это, в настоящее время компания New Balance - одна из самых ведущих на рынке спортивной обуви. И на протяжении всей своей истории нью беланс остается верной своим принципам - технологичность, комфорт, качество!</div>
         </div>
       </div>
       <footer class="footer">
