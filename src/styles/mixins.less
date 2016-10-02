@@ -25,3 +25,19 @@
     margin-top: -3px;
   }
 }
+
+.price-crossed {
+  position: relative;
+  
+  &:before {
+    content: '';
+    display: block;
+    width: 110%;
+    height: 1px;
+    position: absolute;
+    left: -5px;
+    bottom: 6px;
+    transform: rotate(13deg);
+    background: #666;
+  }
+}

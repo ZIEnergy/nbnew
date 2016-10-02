@@ -231,6 +231,48 @@ html(lang='en')
         .info__text
           span.first-letter И
           .info__text-content стория New Balance началась в 1906 году в США. Основателем был Вильям Райли. Как бы не смешно звучало, но идея к нему пришла, когда он смотрел на курочку,заметил, что куринная лапка очень устойчивая, за счет 3-ех точек опоры. Эта идея и была реализована. За это время компания сменила множество владельцев. Были и взлеты и падения, но несмотря на это, в настоящее время компания New Balance - одна из самых ведущих на рынке спортивной обуви. И на протяжении всей своей истории нью беланс остается верной своим принципам - технологичность, комфорт, качество!
-      include ../templates/footer.jade
+    .recommendations
+      .wrapper
+        h2.section-header Также рекомендуем:
+        .recommendations__container
+          a.recommendations__big(href="#")
+            img.recommendations__big-picture(src="img/recommendations-big.jpg", alt="New Balance")
+            .recommendations__big-bottom
+              .recommendations__big-name New Balance мужские ML1400 BR (4025)
+              .recommendations__big-price
+                .recommendations__big-price-new 3990
+                  +currency
+                .recommendations__big-price-old 3990
+                  +currency
+          .recommendations__content
+            a.recommendations__item(href="#")
+              img.recommendations__item-picture(src="img/recommendations-1.jpg", alt="New Balance")
+              .recommendations__item-price
+                .recommendations__item-price-new 3990
+                  +currency
+                .recommendations__item-price-old 8750
+                  +currency
+            a.recommendations__item(href="#")
+              img.recommendations__item-picture(src="img/recommendations-2.jpg", alt="New Balance")
+              .recommendations__item-price
+                .recommendations__item-price-new 3990
+                  +currency
+                .recommendations__item-price-old 8750
+                  +currency
+            a.recommendations__item(href="#")
+              img.recommendations__item-picture(src="img/recommendations-3.jpg", alt="New Balance")
+              .recommendations__item-price
+                .recommendations__item-price-new 3990
+                  +currency
+                .recommendations__item-price-old 8750
+                  +currency
+            a.recommendations__item(href="#")
+              img.recommendations__item-picture(src="img/recommendations-4.jpg", alt="New Balance")
+              .recommendations__item-price
+                .recommendations__item-price-new 3990
+                  +currency
+                .recommendations__item-price-old 8750
+                  +currency
+    include ../templates/footer.jade
       +modalCallback
       +modalOrder
