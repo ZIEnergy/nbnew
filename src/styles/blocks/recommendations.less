@@ -1,12 +1,13 @@
 .recommendations {
-  padding: 60px 0 80px;
-  border-bottom: @border-grey;
+  padding-top: 60px;
   
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 75px;
+    border-bottom: @border-grey;
+    padding-bottom: 80px;
   }
   
   &__big {
@@ -52,11 +53,20 @@
   &__content {
     display: flex;
     flex-flow: row wrap;
-    
+    justify-content: flex-end;
   }
   
   &__item {
+    width: 190px;
+    text-decoration: none;
     
+    &:nth-child(2n) {
+      margin-left: 40px;
+    }
+    
+    &:nth-child(n+3) {
+      margin-top: 43px;
+    }
   }
   
   &__item-picture {
@@ -64,14 +74,24 @@
   }
   
   &__item-price {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33px;
   }
   
   &__item-price-new {
-    
+    font-family: @font-family-main;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
   }
   
   &__item-price-old {
-    
+    margin-left: 24px;
+    color: #666;
+    font-size: 14px;
+    font-family: @font-family-main;
+    .price-crossed;
   }
 }
