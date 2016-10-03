@@ -1,27 +1,56 @@
 .footer {
-  margin-top: 60px;
+  padding-bottom: 41px;
   
-  &__navigation {
-    background: @color-primary;
+  &__wrapper {
+    border-top: @border-grey;
+    padding-top: 41px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
   }
   
-  &__bottom {
+  &__left {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+    align-items: center;
+  }
+  
+  &__logo {
+    width: 76px;
+    height: 36px;
+    display: block;
+    margin-right: 24px;
+    background: url('data:image/png;base64,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') no-repeat;
+    background-size: cover;
   }
   
   &__info {
-    
+    width: 335px;
+    font-family: @font-family-main;
+    font-size: 10px;
   }
   
-  &__info-item {
+  &__contacts {
+    display: flex;
+  }
+  
+  &__contacts-item {
     font-family: @font-family-main;
-    font-size: 15px;
-    line-height: 1.2;
+    font-size: 12px;
+    
+    &:nth-child(n+2) {
+      margin-left: 105px;
+    }
+  }
+  
+  &__address-link {
+    font-size: 16px;
+    color: @link-blue;
+    display: block;
+    line-height: 20px;
+  }
+  
+  &__phone-number {
+    font-size: 16px;
+    display: block;
+    line-height: 20px;
   }
 }
