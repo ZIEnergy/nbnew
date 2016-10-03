@@ -29,7 +29,7 @@ html(lang='en')
                 .product__thumbnails-container        
                   a.product__thumbnail.product__thumbnail--active.cloud-zoom-gallery(href="img/item-1-big.jpg", rel="useZoom: 'zoom1', smallImage: 'img/item-1-big.jpg'")
                     img.product__thumbnail-img(src="img/item-1-small.jpg", alt="New Balance")
-                  a.product__thumbnail.cloud-zoom-gallery(href="img/item-1-big.jpg", rel="useZoom: 'zoom1', smallImage: 'img/item-1-big.jpg'")
+                  a.product__thumbnail.cloud-zoom-gallery(href="img/item-2-big.jpg", rel="useZoom: 'zoom1', smallImage: 'img/item-2-big.jpg'")
                     img.product__thumbnail-img(src="img/item-1-small.jpg", alt="New Balance")
                   a.product__thumbnail.cloud-zoom-gallery(href="img/item-1-big.jpg", rel="useZoom: 'zoom1', smallImage: 'img/item-1-big.jpg'")
                     img.product__thumbnail-img(src="img/item-1-small.jpg", alt="New Balance")
@@ -269,7 +269,7 @@ html(lang='en')
     .feedback
       .wrapper
         .feedback__header
-          h2.feedback__title.feedback__title--active Отзывы
+          a.feedback__title.feedback__title--active(href="#") Отзывы
             span.feedback__count (64)
           .feedback__header-stars.stars.stars--big
             .stars__item.stars__item--full
@@ -277,7 +277,7 @@ html(lang='en')
             .stars__item.stars__item--full
             .stars__item.stars__item--full
             .stars__item.stars__item--full
-          .feedback__title Вопросы
+          a.feedback__title(href="#") Вопросы
             span.feedback__count (3)
         .feedback__content
           .feedback__item
@@ -410,4 +410,3 @@ html(lang='en')
             img(src="img/social-temporary.jpg", alt="temporary image")
     include ../templates/footer.jade
       +modalCallback
-      +modalOrder

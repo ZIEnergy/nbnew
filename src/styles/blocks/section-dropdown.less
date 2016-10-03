@@ -14,6 +14,10 @@
       border-top: 0;
     }
     
+    &--border-bottom {
+      border-bottom: @border-grey;
+    }
+    
     &:before {
       content: '';
       display: block;
@@ -36,12 +40,16 @@
   &__content {
     position: absolute;
     opacity: 0;
+    top: 0;
+    left: 0;
     z-index: -1;
+    height: 0;
     
     &--active {
       position: static;
       opacity: 1;
       z-index: 0;
+      height: auto;
     }
   }
 }

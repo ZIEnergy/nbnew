@@ -18,8 +18,9 @@
     font-size: 22px;
     font-weight: 700;
     position: relative;
+    text-decoration: none;
     
-    &--active {
+    &--active, &:hover {
       
       &:after {
         content: '';
@@ -117,6 +118,10 @@
     align-items: center;
     text-decoration: none;
     
+    &:hover {
+      background: rgba(241, 241, 241, .1);
+    }
+    
     &--active {
       border-color: #fff;
     }
@@ -129,5 +134,9 @@
     border-bottom: 1px dashed #fff;
     padding-bottom: 5px;
     text-decoration: none;
+    
+    &:hover {
+      border-color: transparent;
+    }
   }
 }

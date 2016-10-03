@@ -49,4 +49,9 @@ $(document).ready(function() {
     $(this).parents('.section-dropdown').find('.section-dropdown__content').toggleClass('section-dropdown__content--active');
   });
   
+  $('.info-menu').click(function(e) {
+    e.preventDefault();
+    $('.info__text').hide().fadeIn('fast');
+  });
+  
 });

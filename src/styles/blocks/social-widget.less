@@ -11,11 +11,12 @@
     box-sizing: content-box;
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    border-left: 19px solid transparent;
-    border-right: 19px solid transparent;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
     display: block;
+    transition: @transition;
     
-    &--active {
+    &--active, &:hover {
       border-color: #f0f0f0;
     }
     
