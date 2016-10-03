@@ -4,8 +4,6 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 34px;
-    border-bottom: @border-grey;
   }
   
   &__left {
@@ -106,11 +104,34 @@
     height: auto;
   }
   
+  &__availability {
+    color: #6caf36;
+    font-family: @font-family-main;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    margin-bottom: 16px;
+    
+    &:before {
+      content: '';
+      display: block;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAMAAACecocUAAAAP1BMVEUAAABwrzBorzBqrzVsrzRrrjRsrzZqrzVsrzVrrzRsrzZsrzZrrzVsrzZrrjZrrzVsrjZrrjZsrzVrrjVsrzYnRpMkAAAAFHRSTlMAECAwQE9QYG9wf4Cgr7DP0ODv8OtTtWcAAABPSURBVAgdBcEBAoMgDMDAVBSHomDJ/9+6O4Dtdx0AEI9qVoCpqlZoqvquhOmndqoVvzjtxPBmZWEnhja6WYihbhTNY6gvcKrqDIDSl7MBf1z6BWkh4iNSAAAAAElFTkSuQmCC') no-repeat;
+      background-size: cover;
+      width: 11px;
+      height: 11px;
+      margin-right: 6px;
+    }
+  }
+  
   &__name {
     font-size: 22px;
     font-family: @font-family-main;
     font-weight: 700;
     margin-bottom: 20px;
+    
+    &--small {
+      font-size: 16px;
+    }
   }
   
   &__price {
@@ -132,6 +153,7 @@
     margin-left: 30px;
     position: relative;
     font-weight: 700;
+    margin-bottom: 5px;
     
     &:after {
       content: '';
@@ -148,6 +170,18 @@
   
   &__sizes {
     margin-top: 30px;
+    
+    &--with-question {
+      padding-bottom: 27px;
+      margin-bottom: 27px;
+      border-bottom: @border-grey;
+    }
+  }
+  
+  &__sizes-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
   }
   
   &__sizes-header {
@@ -202,7 +236,39 @@
   }
   
   &__features {
-    margin-top: 30px;
+    
+    
+    &--short {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      
+      .product__features-item {
+        align-items: center;
+        font-weight: 700;
+        
+        &:nth-child(1) {
+          
+          &:before {
+            width: 25px;
+            height: 20px;
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAUCAYAAAB4d5a9AAAB7klEQVRIS52VgTEEURBE+yJABIgAESACRIAIEAEiQASIABkQgRPBEYETAfW2prfG+Hucqdra3b/zp3tm+s+O9N0OJO1I2o3lV0mPks4l8fwvG0XANUnr8fwWgQnKGqBTSTdxz0C3fwEH5DPtOpF0WeiuSLqXBJFqZHj2W3oZJANQriNJ2xFgUdI4CK3GGuTmAvmQRCAb7E4lQcJGv64DmD7NDfIkaasBspT6AIn3xB4QwLha9hJl7pjiTANhaqNcd9FUykhPsMw+97IFglgo7dQg1HujeJIZilqObwgA4MNYn1UuVPls8rnxNLmV+nEEJRs2AwbLDEIVIINReuKg0k48GYSNAJFVNTLaL2rKIATdjE0uE6+ctYlBHqLxC4k1zjCHJffatyEQgtu3U6lB0DvpccE4GxMAZ7LJVstFGW1kgP8PEJ9cpApzjGxa5atKa6mLtUGQvAFAgFrWUlf1n5kJUvXhpKl7DbBarouYGpDibM0sl5V0FfRpPJr3HHNWBsF/IsknHHIoDX+e+8bTKP8v+AAA5wOz3usZws97aLpHkMdP/w11Ubc8t2g6B89jxiAcspYRlN8AI4TABkGVvI/zlHWAzBwnwOoAzWBk4d8ApWPusdZPkBaIpedykRXPQyrDn+whRy/oDdXxUNUXvO2prbWdqR8AAAAASUVORK5CYII=') no-repeat;
+            background-size: cover;
+          }
+        }
+        
+        &:nth-child(2) {
+          margin-top: 0;
+          
+          &:before {
+            width: 22px;
+            height: 23px;
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAYAAAAP6L+eAAAB5ElEQVRIS42VgTEEQRBF/0XARYAIEAEXgRMBIkAEiAARIAJEgAgQgROBEwH1ruZv9c72HF11tbcz03+6/+/uHWm57Up6ahyZSHpuuY+qjVVJ87B2K+lA0kV17kzSnaTDsN7zjcBsfEiaSXqQtF4cryWdVMC+8KoEMi3nNxxYBObQsaRvSSsFCNDzcpgnxpMgeHIes08XhIG3JL2G9Hh/q6IkA4yMovmss9jG18CIsCNpv9CQaYKQWEsw6Lgv+xMDw+leceTmowQ5UlFvO1rWHyVNa/HgmSo4lcT/aPCKxarhHWEvC438X+zX5WYOfyShcLQWFQDBO1x3lgFTmzeS6gbIqHADQR10LAV2hdAUBsvEZI19mmVRCX8Bw+VX6bYIjOoYQtsMPMg8o8Lp1QK6+6KoFm4wNzLgZnoJH03asiHEvHiX5CowngdOT6TSEJulirpSNDC80iCkRpkBWrd0C5io6UYCgiYaZG5gbmLwfNI1CWirKryOD6BrpUHGdUuPk86ycyZevLA3yAzsSuDWWE4vwdOdZYp4h1tPPTD4QeUsiucJV6fNOs3iqUbaNEWvhYvTYB6zjoDxMO9EgGjwTxn6q4IWZEf06RjN6riOmAs89dirv3WpsP8BtiPR8Ysf0Ga1/AIQs3MYtinKuQAAAABJRU5ErkJggg==') no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
   }
   
   &__features-item {
@@ -217,6 +283,7 @@
       width: 30px;
       height: 30px;
       margin-right: 10px;
+      flex: 0 0 auto;
     }
     
     &:nth-child(n+2) {

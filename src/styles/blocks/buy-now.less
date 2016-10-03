@@ -2,6 +2,14 @@
   background: #f2d0d0;
   border-radius: 6px;
   padding: 20px;
+  margin-bottom: 30px;
+  
+  &__text {
+    font-size: 14px;
+    font-family: @font-family-main;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
   
   &__phone {
     display: flex;
@@ -20,12 +28,15 @@
     height: 40px;
     width: 80px;
     background: #fff;
+    padding-left: 10px;
   }
   
   &__phone-number {
     height: 40px;
     width: 214px;
     background: #fff;
+    padding-left: 10px;
+    font-family: @font-family-main;
   }
   
   &__to-cart {
@@ -41,11 +52,26 @@
     &:before {
       content: '';
       display: block;
-      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAaCAYAAABLlle3AAAB30lEQVRIS7WWjTUDURBGbyoQFaACUgEqkA5QAakAFUgHqAAVoAJUgApQAefmvImXzSb7k/XOyckmu/vu/Hwz83rAC7DN33oHtrLfnV/2ACEbhZ33gcfOaWlDoZvp41+nwAFwAxz9JzTfew94SH8YYqPQ+dLT4opwXwDnhZvDQv5bGVQGNaxXycuioH5aUWZfeiqD9hNwDTgGrrN3NKhtrncA9xyVQWUIOkwKVsldrK8EHSyCqui3DgUVAv0G+oug8qzT3Y7KR0GeAffAcBk0BGVYFJTfbVc4MALGy6AConyKgmoCV5if6YWBbbcKGmFZpR9b27fAJJ/Cq6C5lW378Rg4ybVRBc3LZyKCJnFNz8YUm6aoDnSVflxaenWgGhzWlvXjZc5HBXxkk6wyp7FhXj4aUHfF2JwZlXU9zftxXWD+3EzJ1YW6gQ17IvkUqmWz1mfziHg9bS5NoMJUr2NPuJvYYYpT6DK7b5nNpaMJ1Pw8A68JpAEebeKEEUq1tDTExuLZa66FNoGGmNaTl9E4Jv00QWzqsWcYMddUmkCjnYVnAQ2ReKgztGFU1PdK0FCwzdvwaYQG6JH59dv8OYfv0snSfquoZiZUE09DwebKXJo7r3Oh6J2h9vDufb2fU/kv9qdv+teprVAAAAAASUVORK5CYII=') no-repeat;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAaCAMAAAB8SKeFAAAARVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADc6ur3AAAAFnRSTlMAECAwQFBgcH+AkJ+gsL/Az9Df4O/wSAJbYwAAAOFJREFUGBl1wYF2gjAQRcGbZFlEQxFI3v9/aoNVEXqcYZa08M2qxvgimo3KfGdS5LtVA013OWPjWmh0NrEJVQ74dFDV85D1wz9ViYcoRU5MladJmTdPNINGnlwl0OQbuEoEJvW8rHIgVt1cykCQEi+DFppUJWWaTpW3IBlNqspsrsrsskY26crDLGdnUmQXpciHWQM718onV/nZLcp8ClUHzkEyc/vTm1ngqCsqDnhRSZzEMvmoSNTYzSVw5AoE9QyCKOOoUyTI6RUwGUehLpd7DcR6v5Q1cJJGjQmwWWNk8wsurQ/cce3TygAAAABJRU5ErkJggg==') no-repeat;
       background-size: cover;
       width: 29px;
       height: 26px;
       margin-right: 12px;
     }
+  }
+  
+  &--short {
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+    margin-bottom: 60px;
+    
+    .buy-now__to-cart {
+      margin-top: 24px;
+    }
+  }
+  
+  &--grey {
+    background: #dedede;
   }
 }

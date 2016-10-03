@@ -1,41 +1,5 @@
 mixin currency
   span.currency &nbsp;&#8381;
-
-mixin popular-item(img, name, priceNew, priceOld)
-  a.popular-item(href="item.html")
-    img.popular-item__picture(src="img/"+img, alt="New Balance")
-    p.popular-item__name #{name}
-    .popular-item__price
-      .popular-item__price-new #{priceNew}
-        span.popular-item__price-currency &nbsp;&#8381;
-      .popular-item__price-old #{priceOld}
-        span.popular-item__price-currency &nbsp;&#8381;
-        
-        
-mixin item(img, name, priceNew, priceOld, size1, size2, size3, size4, size5)
-  li.item
-   .item__content
-      a.item__link(href="item.html")
-        img.item__picture.lazy(data-original="img/"+img, alt="New Balance", width="200", height="150")
-        p.item__name #{name}
-      .item__price
-        .item__price-new #{priceNew}
-          span.item__price-currency &nbsp;&#8381;
-        .item__price-old #{priceOld}
-          span.item__price-currency &nbsp;&#8381;
-      ul.item__sizes-list
-        li.item__size
-          a.item__size-link(href="#order" data-modal) 36
-        li.item__size
-          a.item__size-link(href="#order" data-modal) 37
-        li.item__size
-          a.item__size-link(href="#order" data-modal) 38
-        li.item__size
-          a.item__size-link(href="#order" data-modal) 39
-        li.item__size
-          a.item__size-link(href="#order" data-modal) 40
-      a.btn(href="#order" data-modal) Купить
-      .item__availability ● Есть в наличии
       
 
 mixin modalCallback
@@ -87,3 +51,22 @@ mixin modalOrder
           input(type="email" placeholder="E-mail" name="email").input-text.input-text--large.modal__input-text
           input(type="text" placeholder="Адрес доставки" name="address").input-text.input-text--large.modal__input-text
           button.btn.btn--large.modal__btn.modal-order__button Купить
+          
+mixin shop-features(modificator)
+  ul.shop-features(class="shop-features--"+modificator)
+    li.shop-features__item.shop-features__item--age
+      .shop-features__item-wrapper
+        h3.shop-features__item-header Нам 5 лет!
+        p.shop-features__item-content Крупнейший магазин Newbalance в Москве
+    li.shop-features__item.shop-features__item--return
+      .shop-features__item-wrapper
+        h3.shop-features__item-header Возврат
+        p.shop-features__item-content Обмен и возврат кроссовок в течении 14 дней!
+    li.shop-features__item.shop-features__item--originals
+      .shop-features__item-wrapper
+        h3.shop-features__item-header Оригиналы из США
+        p.shop-features__item-content Качественная обувь по ценам США
+    li.shop-features__item.shop-features__item--guarantee
+      .shop-features__item-wrapper
+        h3.shop-features__item-header Гарантия 1 год
+        p.shop-features__item-content Оригинальная обувь с гарантией на год

@@ -162,18 +162,15 @@ html(lang='en')
                         td.size-question__table-cell 8.5
                         td.size-question__table-cell 9.5
                         td.size-question__table-cell 10
-              form.buy-now(action="#" method="post")
-                .buy-now__phone
-                  span.buy-now__phone-country +7
-                  input.buy-now__phone-region(type="text")
-                  input.buy-now__phone-number(type="text")
-                button.btn-buy(href="#") Купить сейчас
+              form.buy-now.buy-now--short(action="#" method="post")
+                button.btn-buy.btn-buy--big(href="#") Купить сейчас
                 a.buy-now__to-cart(href="#") Отложить в корзину
               ul.product__features
                 li.product__features-item Есть в наличии
                 li.product__features-item Бесплатная доставка за 90 минут
                 li.product__features-item Натуральная замша
-      .other-colors
+    .other-colors
+      .wrapper.other-colors__wrapper
         h2.section-header Другие расцветки этой модели:
         .other-colors__slider
           a.other-colors__item(href="#")
@@ -202,19 +199,7 @@ html(lang='en')
               img.other-colors__item-picture(src="img/other-4.jpg", alt="New Balance")
     .info
       .wrapper
-        ul.shop-features
-          li.shop-features__item.shop-features__item--age
-            h3.shop-features__item-header Нам 5 лет!
-            p.shop-features__item-content Крупнейший магазин Newbalance в Москве
-          li.shop-features__item.shop-features__item--return
-            h3.shop-features__item-header Возврат
-            p.shop-features__item-content Обмен и возврат кроссовок в течении 14 дней!
-          li.shop-features__item.shop-features__item--originals
-            h3.shop-features__item-header Оригиналы из США
-            p.shop-features__item-content Качественная обувь по ценам США
-          li.shop-features__item.shop-features__item--guarantee
-            h3.shop-features__item-header Гарантия 1 год
-            p.shop-features__item-content Оригинальная обувь с гарантией на год
+        +shop-features
         ul.info-menu.info__info-menu
           li.info-menu__item.info-menu__item--active
             a.info-menu__item-link(href="#") О бренде
