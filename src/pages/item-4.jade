@@ -10,9 +10,9 @@ html(lang='en')
         .product
           .product__top
             .product__left
-              .breadcrumbs
+              ul.breadcrumbs
                 li.breadcrumbs__item
-                  a.breadcrumbs__item-link(href="#") Кроссовки New Balance
+                  a.breadcrumbs__item-link(href="item-5.html") Кроссовки New Balance
                 li.breadcrumbs__item
                   a.breadcrumbs__item-link(href="#") Все модели
                 li.breadcrumbs__item
@@ -33,14 +33,14 @@ html(lang='en')
                     img.product__thumbnail-img(src="img/item-1-small.jpg", alt="New Balance")
                   a.product__thumbnail.cloud-zoom-gallery(href="img/item-1-big.jpg", rel="useZoom: 'zoom1', smallImage: 'img/item-1-big.jpg'")
                     img.product__thumbnail-img(src="img/item-1-small.jpg", alt="New Balance")
-            .product__right
+            .product__right.product__right--margin-top
               h1.product__name New Balance женские M574BCB
               .product__price
                 .product__price-new 3990
                   span.product__price-currency.currency &nbsp;&#8381;
                 .product__price-old 8 700
                   span.product__price-currency &nbsp;&#8381;
-              .product__sizes
+              .product__sizes.product__sizes--margin-top
                 .product__sizes-header Размеры (RUS):
                 ul.product__sizes-list
                   li.product__sizes-item
@@ -58,7 +58,7 @@ html(lang='en')
                   li.product__sizes-item
                     a.product__sizes-item-content 45
               .size-question
-                a.size-question__link(href="#", data-size-popup) Как определить свой размер?
+                a.size-question__link.size-question__link--margin-bottom(href="#", data-size-popup) Как определить свой размер?
                 .size-question__popup
                   a.size-question__popup-close(href="#", data-size-popup)
                   .size-question__question-popup-wrapper
@@ -162,12 +162,8 @@ html(lang='en')
                         td.size-question__table-cell 8.5
                         td.size-question__table-cell 9.5
                         td.size-question__table-cell 10
-              form.buy-now(action="#" method="post")
-                .buy-now__phone
-                  span.buy-now__phone-country +7
-                  input.buy-now__phone-region(type="text")
-                  input.buy-now__phone-number(type="text")
-                button.btn-buy(href="#") Купить сейчас
+              form.buy-now.buy-now--short(action="#" method="post")
+                button.btn-buy.btn-buy--big(href="#") Купить сейчас
                 a.buy-now__to-cart(href="#") Отложить в корзину
               ul.product__features
                 li.product__features-item Есть в наличии
@@ -175,7 +171,7 @@ html(lang='en')
                 li.product__features-item Натуральная замша
     .info
       .wrapper
-        +shop-features
+        +shop-features('red')
         ul.info-menu.info__info-menu
           li.info-menu__item.info-menu__item--active
             a.info-menu__item-link(href="#") О бренде
@@ -413,4 +409,4 @@ html(lang='en')
           .social-widget__content
             img(src="img/social-temporary.jpg", alt="temporary image")
     include ../templates/footer.jade
-      +modalCallback
+    +modalCallback

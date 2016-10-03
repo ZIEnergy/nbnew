@@ -56,11 +56,11 @@
         <div class="product">
           <div class="product__top">
             <div class="product__left">
-              <div class="breadcrumbs">
-                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item-link">Кроссовки New Balance</a></li>
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="item-1.html" class="breadcrumbs__item-link">Кроссовки New Balance</a></li>
                 <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item-link">Все модели</a></li>
                 <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item-link">Мужские</a></li>
-              </div>
+              </ul>
               <div class="product__gallery">
                 <div class="product__gallery-big">
                   <div class="product__gallery-sale">
@@ -210,7 +210,7 @@
                   <input type="text" class="buy-now__phone-region">
                   <input type="text" class="buy-now__phone-number">
                 </div>
-                <button href="#" class="btn-buy">Купить сейчас</button><a href="#" class="buy-now__to-cart">Отложить в корзину</a>
+                <button class="btn-buy">Купить сейчас</button><a href="#" class="buy-now__to-cart">Отложить в корзину</a>
               </form>
               <ul class="product__features">
                 <li class="product__features-item">Есть в наличии</li>
@@ -235,7 +235,7 @@
     </div>
     <div class="info info--nomargin">
       <div class="wrapper">
-          <ul class="shop-features shop-features--undefined">
+          <ul class="shop-features shop-features--red">
             <li class="shop-features__item shop-features__item--age">
               <div class="shop-features__item-wrapper">
                 <h3 class="shop-features__item-header">Нам 5 лет!</h3>
@@ -499,18 +499,18 @@
         </div>
         <div class="footer__contacts">
           <div class="footer__contacts-item">Адрес<a href="#" class="footer__address-link">Мясницкая 17</a></div>
-          <div class="footer__contacts-item">Телефон<span class="footer__phone-number">+7 (495) 150-11-07
-                <div id="callback" class="modal modal-callback">
-                  <h3 class="modal__header">Заказать звонок</h3>
-                  <p class="modal__text">Для заказа звонка заполните форму. <br> Мы свяжемся с Вами в указанное время!</p>
-                  <form action="#" class="form-callback">
-                    <input type="text" placeholder="Имя" name="name" class="input-text modal__input-text">
-                    <input type="text" placeholder="8 (999) 555-55-55" name="phone" class="input-text modal__input-text">
-                    <button class="btn btn--large modal__btn">Отправить</button>
-                  </form>
-                </div></span></div>
+          <div class="footer__contacts-item">Телефон<span class="footer__phone-number">+7 (495) 150-11-07</span></div>
         </div>
       </div>
     </footer>
+      <div id="callback" class="modal modal-callback">
+        <h3 class="modal__header">Заказать звонок</h3>
+        <p class="modal__text">Для заказа звонка заполните форму. <br> Мы свяжемся с Вами в указанное время!</p>
+        <form action="#" class="form-callback">
+          <input type="text" placeholder="Имя" name="name" class="input-text modal__input-text">
+          <input type="text" placeholder="8 (999) 555-55-55" name="phone" class="input-text modal__input-text">
+          <button class="btn btn--large modal__btn">Отправить</button>
+        </form>
+      </div>
   </body>
 </html>

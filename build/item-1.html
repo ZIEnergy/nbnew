@@ -56,17 +56,17 @@
         <div class="product">
           <div class="product__top">
             <div class="product__left">
-              <div class="breadcrumbs">
-                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item-link">Кроссовки New Balance</a></li>
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="item-2.html" class="breadcrumbs__item-link">Кроссовки New Balance</a></li>
                 <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item-link">Все модели</a></li>
                 <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item-link">Мужские</a></li>
-              </div>
+              </ul>
               <div class="product__gallery">
                 <div class="product__gallery-big">
                   <div class="product__gallery-sale">
                     <div class="product__gallery-sale-content">Экономия<span class="product__gallery-sale-price">4710<span class="currency">&nbsp;&#8381;</span></span></div>
                     <div class="product__gallery-sale-badge">-30%</div>
-                  </div><a id="zoom1" href="img/item-1-big.jpg" rel="adjustX: 0, adjustY: 0, zoomWidth: 340, zoomHeight: 340" class="product__gallery-big-link cloud-zoom"><img src="img/item-1-big.jpg" alt="New Balance" align="left" class="product__gallery-big-img"></a>
+                  </div><a id="zoom1" href="img/item-1-big.jpg" rel="adjustX: 0, adjustY: 100, zoomWidth: 340, zoomHeight: 340" class="product__gallery-big-link cloud-zoom"><img src="img/item-1-big.jpg" alt="New Balance" align="left" class="product__gallery-big-img"></a>
                 </div>
                 <div class="product__thumbnails-container">       <a href="img/item-1-big.jpg" rel="useZoom: 'zoom1', smallImage: 'img/item-1-big.jpg'" class="product__thumbnail product__thumbnail--active cloud-zoom-gallery"><img src="img/item-1-small.jpg" alt="New Balance" class="product__thumbnail-img"></a><a href="img/item-2-big.jpg" rel="useZoom: 'zoom1', smallImage: 'img/item-2-big.jpg'" class="product__thumbnail cloud-zoom-gallery"><img src="img/item-1-small.jpg" alt="New Balance" class="product__thumbnail-img"></a><a href="img/item-1-big.jpg" rel="useZoom: 'zoom1', smallImage: 'img/item-1-big.jpg'" class="product__thumbnail cloud-zoom-gallery"><img src="img/item-1-small.jpg" alt="New Balance" class="product__thumbnail-img"></a></div>
               </div>
@@ -77,7 +77,7 @@
                 <div class="product__price-new">3990<span class="product__price-currency currency">&nbsp;&#8381;</span></div>
                 <div class="product__price-old">8 700<span class="product__price-currency">&nbsp;&#8381;</span></div>
               </div>
-              <div class="product__sizes">
+              <div class="product__sizes product__sizes--margin-top">
                 <div class="product__sizes-header">Размеры (RUS):</div>
                 <ul class="product__sizes-list">
                   <li class="product__sizes-item"><a class="product__sizes-item-content">39</a></li>
@@ -89,7 +89,7 @@
                   <li class="product__sizes-item"><a class="product__sizes-item-content">45</a></li>
                 </ul>
               </div>
-              <div class="size-question"><a href="#" data-size-popup class="size-question__link">Как определить свой размер?</a>
+              <div class="size-question"><a href="#" data-size-popup class="size-question__link size-question__link--margin-bottom">Как определить свой размер?</a>
                 <div class="size-question__popup"><a href="#" data-size-popup class="size-question__popup-close"></a>
                   <div class="size-question__question-popup-wrapper">
                     <h3 class="size-question__popup-header">Как выбрать обувь своего размера?</h3>
@@ -210,7 +210,7 @@
                   <input type="text" class="buy-now__phone-region">
                   <input type="text" class="buy-now__phone-number">
                 </div>
-                <button href="#" class="btn-buy">Купить сейчас</button><a href="#" class="buy-now__to-cart">Отложить в корзину</a>
+                <button class="btn-buy">Купить сейчас</button><a href="#" class="buy-now__to-cart">Отложить в корзину</a>
               </form>
               <ul class="product__features">
                 <li class="product__features-item">Есть в наличии</li>
@@ -230,7 +230,7 @@
     </div>
     <div class="info">
       <div class="wrapper">
-          <ul class="shop-features shop-features--undefined">
+          <ul class="shop-features shop-features--red">
             <li class="shop-features__item shop-features__item--age">
               <div class="shop-features__item-wrapper">
                 <h3 class="shop-features__item-header">Нам 5 лет!</h3>
@@ -448,18 +448,18 @@
         </div>
         <div class="footer__contacts">
           <div class="footer__contacts-item">Адрес<a href="#" class="footer__address-link">Мясницкая 17</a></div>
-          <div class="footer__contacts-item">Телефон<span class="footer__phone-number">+7 (495) 150-11-07
-                <div id="callback" class="modal modal-callback">
-                  <h3 class="modal__header">Заказать звонок</h3>
-                  <p class="modal__text">Для заказа звонка заполните форму. <br> Мы свяжемся с Вами в указанное время!</p>
-                  <form action="#" class="form-callback">
-                    <input type="text" placeholder="Имя" name="name" class="input-text modal__input-text">
-                    <input type="text" placeholder="8 (999) 555-55-55" name="phone" class="input-text modal__input-text">
-                    <button class="btn btn--large modal__btn">Отправить</button>
-                  </form>
-                </div></span></div>
+          <div class="footer__contacts-item">Телефон<span class="footer__phone-number">+7 (495) 150-11-07</span></div>
         </div>
       </div>
     </footer>
+      <div id="callback" class="modal modal-callback">
+        <h3 class="modal__header">Заказать звонок</h3>
+        <p class="modal__text">Для заказа звонка заполните форму. <br> Мы свяжемся с Вами в указанное время!</p>
+        <form action="#" class="form-callback">
+          <input type="text" placeholder="Имя" name="name" class="input-text modal__input-text">
+          <input type="text" placeholder="8 (999) 555-55-55" name="phone" class="input-text modal__input-text">
+          <button class="btn btn--large modal__btn">Отправить</button>
+        </form>
+      </div>
   </body>
 </html>

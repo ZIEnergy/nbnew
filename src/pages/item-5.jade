@@ -11,9 +11,9 @@ html(lang='en')
         .product
           .product__top
             .product__left
-              .breadcrumbs
+              ul.breadcrumbs
                 li.breadcrumbs__item
-                  a.breadcrumbs__item-link(href="#") Кроссовки New Balance
+                  a.breadcrumbs__item-link(href="item-6.html") Кроссовки New Balance
                 li.breadcrumbs__item
                   a.breadcrumbs__item-link(href="#") Все модели
                 li.breadcrumbs__item
@@ -176,7 +176,25 @@ html(lang='en')
               ul.product__features.product__features--short
                 li.product__features-item Бесплатная доставка
                 li.product__features-item Натуральная замша
-    .other-colors
+    .info.info--short
+      .wrapper
+        ul.info-menu.info__info-menu
+          li.info-menu__item.info-menu__item--active
+            a.info-menu__item-link(href="#") О бренде
+          li.info-menu__item
+            a.info-menu__item-link(href="#") Характеристики
+          li.info-menu__item
+            a.info-menu__item-link(href="#") Гарантия
+          li.info-menu__item
+            a.info-menu__item-link(href="#") Доставка
+          li.info-menu__item
+            a.info-menu__item-link(href="#") Магазин
+          li.info-menu__item
+            a.info-menu__item-link(href="#") Сертификаты
+        .info__text
+          span.first-letter И
+          .info__text-content стория New Balance началась в 1906 году в США. Основателем был Вильям Райли. Как бы не смешно звучало, но идея к нему пришла, когда он смотрел на курочку,заметил, что куринная лапка очень устойчивая, за счет 3-ех точек опоры. Эта идея и была реализована. За это время компания сменила множество владельцев. Были и взлеты и падения, но несмотря на это, в настоящее время компания New Balance - одна из самых ведущих на рынке спортивной обуви. И на протяжении всей своей истории нью беланс остается верной своим принципам - технологичность, комфорт, качество!
+    .other-colors.other-colors--bottom
       .wrapper.other-colors__wrapper
         h2.section-header Другие расцветки этой модели:
         .other-colors__slider
@@ -204,24 +222,6 @@ html(lang='en')
               img.other-colors__item-picture(src="img/other-3.jpg", alt="New Balance")
           a.other-colors__slider-item(href="#")
               img.other-colors__item-picture(src="img/other-4.jpg", alt="New Balance")
-    .info.info--short
-      .wrapper
-        ul.info-menu.info__info-menu
-          li.info-menu__item.info-menu__item--active
-            a.info-menu__item-link(href="#") О бренде
-          li.info-menu__item
-            a.info-menu__item-link(href="#") Характеристики
-          li.info-menu__item
-            a.info-menu__item-link(href="#") Гарантия
-          li.info-menu__item
-            a.info-menu__item-link(href="#") Доставка
-          li.info-menu__item
-            a.info-menu__item-link(href="#") Магазин
-          li.info-menu__item
-            a.info-menu__item-link(href="#") Сертификаты
-        .info__text
-          span.first-letter И
-          .info__text-content стория New Balance началась в 1906 году в США. Основателем был Вильям Райли. Как бы не смешно звучало, но идея к нему пришла, когда он смотрел на курочку,заметил, что куринная лапка очень устойчивая, за счет 3-ех точек опоры. Эта идея и была реализована. За это время компания сменила множество владельцев. Были и взлеты и падения, но несмотря на это, в настоящее время компания New Balance - одна из самых ведущих на рынке спортивной обуви. И на протяжении всей своей истории нью беланс остается верной своим принципам - технологичность, комфорт, качество!
     .recommendations
       .wrapper
         h2.section-header Также рекомендуем:
@@ -415,4 +415,4 @@ html(lang='en')
           .social-widget__content
             img(src="img/social-temporary.jpg", alt="temporary image")
     include ../templates/footer.jade
-      +modalCallback
+    +modalCallback
