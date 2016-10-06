@@ -1,0 +1,142 @@
+.feedback {
+  background: #494949;
+  padding: 67px 0 69px;
+  
+  &--bg {
+    background: url(../img/feedback-bg.jpg) no-repeat;
+    background-size: cover;
+  }
+  
+  &__header {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  &__title {
+    color: #fff;
+    font-family: @font-family-main;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    
+    &--active, &:hover {
+      
+      &:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        bottom: -11px;
+        left: 0;
+      }
+    }
+  }
+  
+  &__count {
+    color: #fff;
+    font-family: @font-family-main;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 5px;
+  }
+  
+  &__header-stars {
+    margin: 0 40px;
+  }
+  
+  &__content {
+    margin-top: 135px;
+  }
+  
+  &__item {
+    
+    
+    &:nth-child(n+2) {
+      margin-top: 45px;
+    }
+    
+    &--answer {
+      margin-left: 55px;
+    }
+  }
+  
+  &__item-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__user {
+    font-size: 14px;
+    color: #fff;
+    font-family: @font-family-main;
+    font-weight: 700;
+  }
+  
+  &__age {
+    font-size: 12px;
+    color: #fff;
+    font-family: @font-family-main;
+    margin: 0 15px 0 10px;
+  }
+  
+  &__item-stars {
+    
+  }
+  
+  &__item-content {
+    font-size: 16px;
+    color: #fff;
+    font-family: @font-family-main;
+    margin-top: 15px;
+    line-height: 20px;
+  }
+  
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 115px;
+  }
+  
+  &__pagination {
+    display: flex;
+  }
+  
+  &__pagination-item {
+    width: 43px;
+    height: 43px;
+    border: 2px solid transparent;
+    color: #fff;
+    font-family: @font-family-main;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+    &:hover {
+      background: rgba(241, 241, 241, .1);
+    }
+    
+    &--active {
+      border-color: #fff;
+    }
+  }
+  
+  &__new-link {
+    font-size: 18px;
+    font-family: @font-family-main;
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+    padding-bottom: 5px;
+    text-decoration: none;
+    
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
