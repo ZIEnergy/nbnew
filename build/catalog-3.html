@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/cloud-zoom.1.0.2.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top"><a href="index.html" class="logo"><img src="img/logo.png" alt="New Balance" class="logo__img"></a><a href="page.html" class="delivery-link">
+            <div class="delivery-link__icon"></div>
+            <div class="delivery-link__content">
+              <p class="delivery-link__header">Акция!</p>
+              <p class="delivery-link__text">Доставим по Москве за 90 минут</p>
+            </div></a>
+          <div class="store-link">
+            <div class="store-link__icon"></div>
+            <div class="store-link__content"><a href="#" class="store-link__header">Мясницкая, 17</a>
+              <p class="store-link__text">Ежедневно: 10.00 — 21.00 м. Чистые Пруды</p>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="phone__number">+7 (495) 150-11-07</div><a href="#callback" data-modal class="phone__callback">Заказать звонок</a>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <ul class="menu">
+            <li class="menu__item"><a href="catalog.html" class="menu__item-link">Мужские</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__item-link">Женские</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Магазин</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Доставка</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Гарантии</a></li>
+            <li class="menu__item"><a href="page.html" class="menu__item-link">Сертификаты</a></li>
+            <li class="menu__item"><a href="feedback.html" class="menu__item-link">Отзывы</a></li>
+          </ul><a href="cart.html" class="cart">
+            <div class="cart__icon"></div>
+            <div class="cart__content">Корзина:</div>
+            <div class="cart__price">0</div>
+            <div class="cart__currency">руб.</div></a>
+        </div>
+      </header>
+      <div class="content content--short-margin-top">
+        <aside class="sidebar"><a href="#" class="sidebar__header">Все модели</a>
+          <ul class="catalog-index">
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link catalog-index__category-link--red">Распродажа</a></li>
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link">Женские</a>
+              <ul class="catalog-index__category-sections">
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 574</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 580</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 670</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 990</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 996</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 999</a></li>
+              </ul>
+            </li>
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link">Мужские</a>
+              <ul class="catalog-index__category-sections">
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 530</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 574</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 576</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 580</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 670</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 990</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 996</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 997</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 998</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 999</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 1400</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">New Balance 1500</a></li>
+              </ul>
+            </li>
+            <li class="catalog-index__category"><a href="#" class="catalog-index__category-link">Материал</a>
+              <ul class="catalog-index__category-sections">
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">Замша</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">Кожа</a></li>
+                <li class="catalog-index__section-item"><a href="#" class="catalog-index__section-item-link">Текстиль</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <div class="catalog">
+          <div class="sizes sizes--catalog sizes--with-question">
+            <div class="sizes__header-wrapper">
+              <div class="sizes__header">Размеры (RUS):</div>
+              <div class="size-question size-question--in-sizes"><a href="#" data-size-popup class="size-question__link">Как определить свой размер?</a>
+                <div class="size-question__popup"><a href="#" data-size-popup class="size-question__popup-close"></a>
+                  <div class="size-question__question-popup-wrapper">
+                    <h3 class="size-question__popup-header">Как выбрать обувь своего размера?</h3>
+                    <div class="size-question__popup-content"><img src="img/foot.jpg" alt="Foot" class="size-question__picture">
+                      <p class="size-question__text">Вам понадобится сантиметровая лента или линейка. <br><br> Поставьте ногу на чистый лист бумаги. Отметьте крайние границы ступни и измерьте расстояние между самыми удаленными точками стопы. </p>
+                    </div>
+                    <h3 class="size-question__popup-header">Таблица соответствия размеров:</h3>
+                    <div class="size-question__table-controls"><a href="#" class="size-question__table-btn size-question__table-btn--man size-question__table-btn--active">Мужские</a><a href="#" class="size-question__table-btn size-question__table-btn--woman">Женские</a></div>
+                    <table class="size-question__table size-question__table--man">
+                      <tr class="size-question__table-row">
+                        <td class="size-question__table-cell">см</td>
+                        <td class="size-question__table-cell">25</td>
+                        <td class="size-question__table-cell">25.5</td>
+                        <td class="size-question__table-cell">26.5</td>
+                        <td class="size-question__table-cell">27</td>
+                        <td class="size-question__table-cell">27.5</td>
+                        <td class="size-question__table-cell">28.5</td>
+                        <td class="size-question__table-cell">29</td>
+                      </tr>
+                      <tr class="size-question__table-row">
+                        <td class="size-question__table-cell">RUS</td>
+                        <td class="size-question__table-cell">39</td>
+                        <td class="size-question__table-cell">40</td>
+                        <td class="size-question__table-cell">41</td>
+                        <td class="size-question__table-cell">42</td>
+                        <td class="size-question__table-cell">43</td>
+                        <td class="size-question__table-cell">44</td>
+                        <td class="size-question__table-cell">45</td>
+                      </tr>
+                      <tr class="size-question__table-row">
+                        <td class="size-question__table-cell">EUR</td>
+                        <td class="size-question__table-cell">39</td>
+                        <td class="size-question__table-cell">40</td>
+                        <td class="size-question__table-cell">41</td>
+                        <td class="size-question__table-cell">42</td>
+                        <td class="size-question__table-cell">43</td>
+                        <td class="size-question__table-cell">44</td>
+                        <td class="size-question__table-cell">45</td>
+                      </tr>
+                      <tr class="size-question__table-row">
+                        <td class="size-question__table-cell">UK</td>
+                        <td class="size-question__table-cell">6.5</td>
+                        <td class="size-question__table-cell">7.5</td>
+                        <td class="size-question__table-cell">8</td>
+                        <td class="size-question__table-cell">9</td>
+                        <td class="size-question__table-cell">9.5</td>
+                        <td class="size-question__table-cell">10.5</td>
+                        <td class="size-question__table-cell">11.5</td>
+                      </tr>
+                      <tr class="size-question__table-row">
+                        <td class="size-question__table-cell">US</td>
+                        <td class="size-question__table-cell">7</td>
+                        <td class="size-question__table-cell">8</td>
+                        <td class="size-question__table-cell">8.5</td>
+                        <td class="size-question__table-cell">9.5</td>
+                        <td class="size-question__table-cell">10</td>
+                        <td class="size-question__table-cell">11</td>
+                        <td class="size-question__table-cell">12</td>
+                      </tr>
+                    </table>
+                    <table class="size-question__table size-question__table--woman">
+                      <tr class="size-question__table-row">
+                        <td class="size-question__table-cell">см</td>
+                        <td class="size-question__table-cell">22.5</td>
+                        <td class="size-question__table-cell">23</td>
+                        <td class="size-question__table-cell">23.5</td>
+                        <td class="size-question__table-cell">24.5</td>
+                        <td class="size-question__table-cell">25</td>
+                        <td class="size-question__table-cell">25.5</td>
+                        <td class="size-question__table-cell">26.5</td>
+                      </tr>
+                      <tr class="size-question__table-row">
+                        <td class="size-question__table-cell">RUS</td>
+                        <td class="size-question__table-cell">35</td>
+                        <td class="size-question__table-cell">36</td>
+                        <td class="size-question__table-cell">37</td>
+                        <td class="size-question__table-cell">38</td>
+                        <td class="size-question__table-cell">39</td>
+                        <td class="size-question__table-cell">40</td>
+                        <td class="size-question__table-cell">41</td>
+                      </tr>
+                      <tr class="size-question__table-row">
+                        <td class="size-question__table-cell">EUR</td>
+                        <td class="size-question__table-cell">36</td>
+                        <td class="size-question__table-cell">37</td>
+                        <td class="size-question__table-cell">38</td>
+                        <td class="size-question__table-cell">39</td>
+                        <td class="size-question__table-cell">40</td>
+                        <td class="size-question__table-cell">41</td>
+                        <td class="size-question__table-cell">42</td>
+                      </tr>
+                      <tr class="size-question__table-row">
+                        <td class="size-question__table-cell">UK</td>
+                        <td class="size-question__table-cell">3.5</td>
+                        <td class="size-question__table-cell">4</td>
+                        <td class="size-question__table-cell">5</td>
+                        <td class="size-question__table-cell">6</td>
+                        <td class="size-question__table-cell">6.5</td>
+                        <td class="size-question__table-cell">7.5</td>
+                        <td class="size-question__table-cell">8</td>
+                      </tr>
+                      <tr class="size-question__table-row">
+                        <td class="size-question__table-cell">US</td>
+                        <td class="size-question__table-cell">5.5</td>
+                        <td class="size-question__table-cell">6</td>
+                        <td class="size-question__table-cell">7</td>
+                        <td class="size-question__table-cell">8</td>
+                        <td class="size-question__table-cell">8.5</td>
+                        <td class="size-question__table-cell">9.5</td>
+                        <td class="size-question__table-cell">10</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="sizes__list">
+              <li class="sizes__item"><a class="sizes__item-content">35</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">36</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">37</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">38</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">39</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">40</a></li>
+              <li class="sizes__item sizes__item--active"><a class="sizes__item-content">41</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">42</a></li>
+              <li class="sizes__item sizes__item--active"><a class="sizes__item-content">43</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">44</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">45</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">46</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">47</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">48</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">49</a></li>
+              <li class="sizes__item"><a class="sizes__item-content">50</a></li>
+              <li class="sizes__item sizes__item--all"><a class="sizes__item-content">Все</a></li>
+            </ul>
+          </div>
+          <h1 class="inner-header">Красные кроссовки New Balance со скидкой в Москве</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="item-2.html" class="breadcrumbs__item-link">Кроссовки New Balance</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item-link">Все модели</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item-link">Мужские</a></li>
+          </ul>
+          <ul class="catalog__content">
+              <li class="item">
+                <div class="item__content"><a href="item.html" class="item__link"><img data-original="img/item-1.jpg" alt="New Balance" width="200" height="150" class="item__picture lazy">
+                    <p class="item__name">New Balance женские M574BCB (2294)</p></a>
+                  <div class="item__price">
+                    <div class="item__price-new">3 990<span class="item__price-currency">&nbsp;&#8381;</span></div>
+                    <div class="item__price-old">8 700<span class="item__price-currency">&nbsp;&#8381;</span></div>
+                  </div>
+                  <ul class="item__sizes-list">
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">36</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">37</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">38</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">39</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">40</a></li>
+                  </ul><a href="#order" data-modal class="btn">Купить</a>
+                  <div class="item__availability">● Есть в наличии</div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item__content"><a href="item.html" class="item__link"><img data-original="img/item-2.jpg" alt="New Balance" width="200" height="150" class="item__picture lazy">
+                    <p class="item__name">New Balance женские M574BCB (2294)</p></a>
+                  <div class="item__price">
+                    <div class="item__price-new">3 990<span class="item__price-currency">&nbsp;&#8381;</span></div>
+                    <div class="item__price-old">8 700<span class="item__price-currency">&nbsp;&#8381;</span></div>
+                  </div>
+                  <ul class="item__sizes-list">
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">36</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">37</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">38</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">39</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">40</a></li>
+                  </ul><a href="#order" data-modal class="btn">Купить</a>
+                  <div class="item__availability">● Есть в наличии</div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item__content"><a href="item.html" class="item__link"><img data-original="img/item-3.jpg" alt="New Balance" width="200" height="150" class="item__picture lazy">
+                    <p class="item__name">New Balance женские M574BCB (2294)</p></a>
+                  <div class="item__price">
+                    <div class="item__price-new">3 990<span class="item__price-currency">&nbsp;&#8381;</span></div>
+                    <div class="item__price-old">8 700<span class="item__price-currency">&nbsp;&#8381;</span></div>
+                  </div>
+                  <ul class="item__sizes-list">
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">36</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">37</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">38</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">39</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">40</a></li>
+                  </ul><a href="#order" data-modal class="btn">Купить</a>
+                  <div class="item__availability">● Есть в наличии</div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item__content"><a href="item.html" class="item__link"><img data-original="img/item-4.jpg" alt="New Balance" width="200" height="150" class="item__picture lazy">
+                    <p class="item__name">New Balance женские M574BCB (2294)</p></a>
+                  <div class="item__price">
+                    <div class="item__price-new">3 990<span class="item__price-currency">&nbsp;&#8381;</span></div>
+                    <div class="item__price-old">8 700<span class="item__price-currency">&nbsp;&#8381;</span></div>
+                  </div>
+                  <ul class="item__sizes-list">
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">36</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">37</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">38</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">39</a></li>
+                    <li class="item__size"><a href="#order" data-modal class="item__size-link">40</a></li>
+                  </ul><a href="#order" data-modal class="btn">Купить</a>
+                  <div class="item__availability">● Есть в наличии</div>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sitemap">
+      <div class="wrapper sitemap__wrapper">
+        <div class="sitemap__content">
+          <div class="sitemap__item">
+            <h3 class="sitemap__item-header">Newbalance574.ru</h3>
+            <ul class="sitemap__item-list">
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">Магазин</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">Доставка</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">Гарантия</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">Сертификаты</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">Отзывы</a></li>
+            </ul>
+          </div>
+          <div class="sitemap__item">
+            <h3 class="sitemap__item-header">Мужские</h3>
+            <ul class="sitemap__item-list">
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 574</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 580</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 670</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 996</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 990</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 999</a></li>
+            </ul>
+          </div>
+          <div class="sitemap__item">
+            <h3 class="sitemap__item-header">Женские</h3>
+            <ul class="sitemap__item-list">
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 574</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 580</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 670</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 990</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 996</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 997</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 998</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 999</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 1400</a></li>
+              <li class="sitemap__list-item"><a href="#" class="sitemap__item-link">New Balance 1500</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-widget">
+          <div class="social-widget__header"><a href="#" class="social-widget__item social-widget__item--active social-widget__item--vk"></a><a href="#" class="social-widget__item social-widget__item--fb"></a><a href="#" class="social-widget__item social-widget__item--ok"></a><a href="#" class="social-widget__item social-widget__item--instagram"></a></div>
+          <div class="social-widget__content"><img src="img/social-temporary.jpg" alt="temporary image"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__left"><a href="#" class="footer__logo"></a>
+          <p class="footer__info">NewBalance обувь по ценам США Официальный магазин в Москве ООО "ИнтерТрейд Коммерц"  ИНН 7715306180 ОГРН 1027739891354</p>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-item">Адрес<a href="#" class="footer__address-link">Мясницкая 17</a></div>
+          <div class="footer__contacts-item">Телефон<span class="footer__phone-number">+7 (495) 150-11-07</span></div>
+        </div>
+      </div>
+    </footer>
+      <div id="callback" class="modal modal-callback">
+        <h3 class="modal__header">Заказать звонок</h3>
+        <p class="modal__text">Для заказа звонка заполните форму. <br> Мы свяжемся с Вами в указанное время!</p>
+        <form action="#" class="form-callback">
+          <input type="text" placeholder="Имя" name="name" class="input-text modal__input-text">
+          <input type="text" placeholder="8 (999) 555-55-55" name="phone" class="input-text modal__input-text">
+          <button class="btn btn--large modal__btn">Отправить</button>
+        </form>
+      </div>
+  </body>
+</html>
